@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+<!--
+<body onload="callAction()">
+-->
+<body>
+  <h1>Realtime communication WebRTC PEER_2</h1>
+
+  <div id="videos">
+  
+	<video id="localVideo" playsinline control loop muted>
+	   <source src="video/gizmo.webm" type="video/webm"/>
+       <source src="video/gizmo.mp4" type="video/mp4"/>
+	   <p>This browser does not support the video element.</p>
+	</video>
+	
+	<video id="remoteVideo" autoplay playsinline></video>
+  </div>
+  
+   <div>
+    <button id="callButton">Streaming!</button>
+	<button id="stopButton">Stop!</button>
+  </div>
+  
+  
+ 
+  <!-- This file is automatically added/served when running "node index.js". -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
