@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <title>MSE Demo</title>
+</head>
+<body>
+    <h1>MSE Demo</h1>
+    <div>
+        <video controls muted width="80%"></video>
+    </div>
+    <script type="text/javascript">
+	
+        var mime = 'video/mp4; codecs="avc1.640028, mp4a.40.2"';
+		
+		//https://stackoverflow.com/questions/47268020/fragmented-mp4-doesnt-show-up-in-chrome
+		//var mime = 'video/mp4; codecs="avc1.42E01E"'
+
+        if (!MediaSource.isTypeSupported(mime)) {
+            document.querySelector('h1').append(' - Unsuported mime type :(');
+        }
+
+        var buffer;
+        var websocket;
+
+        // Pre alloc buffer due updating delay
+        var buffer_size = 5*1024*1024;
+        var buffer_index = 0;
+        var frag_mp4_buffer = new Uint8Array(buffer_size);
+        var video = document.querySelector('video');
+        var mediaSource = new MediaSource();
+
+        mediaSource.addEventListener('sourceended', function(e) { console.log('sourceended: ' + mediaSource.readyState); });
+        mediaSource.addEventListener('sourceclose', function(e) { console.log('sourceclose: ' + mediaSource.readyState); });
+        mediaSource.addEventListener('error', function(e) { console.log('error: ' + mediaSource.readyState); });
+
+        video.src = window.URL.createObjectURL(mediaSource);
+
+        mediaSource.addEventListener('sourceopen', function(e) {
+            console.log('sourceopen: ' + mediaSource.readyState);
+			
+			/*
+            video.play();
+			*/
+			
+			console.log('play');
+			
+			
+			var promise = video.play();
+			if (promise !== undefined) {
+			promise.then(_ => {
+				// Autoplay started!
+			}).catch((error) => {
+				// Autoplay was prevented.
+				// Show a "Play" button so that user can start playback.
+				console.log("error " + error.message);
+			});
+			}
+			
+			
+			
+            buffer = mediaSource.addSourceBuffer(mime);
+			
+			console.log('configure buffer');
+
+            buffer.addEventListener('updateend', function(e) {
+                if (video.duration && !video.currentTime) {
+                    video.currentTime = video.duration;
+                }
+            });
+			
+			console.log('set listener to buffer');
+
+            var websocket = new WebSocket('ws://' + document.location.hostname +':8082');
+            websocket.binaryType = 'arraybuffer';
+			
+			console.log('create websocket');
+
+            websocket.addEventListener('message', function(e) {
+                var data = new Uint8Array(e.data);
+				console.log('websocket get info data ' +  data);
+                if (data.length) {
+                    if((buffer_index + data.length) <= buffer_size){
+                        frag_mp4_buffer.set(data, buffer_index);
+                        buffer_index = buffer_index + data.length;
+
+                        if (!buffer.updating && mediaSource.readyState == 'open') {
+                            var appended = frag_mp4_buffer.slice(0, buffer_index);
+
+                            buffer.appendBuffer(appended);
+
+                            frag_mp4_buffer.fill(0);
+                            buffer_index = 0;
+                        }
+                    }
+                }
+            }, false);
+			
+			
+        }, false);
+    </script>
+</body>
+</html>
