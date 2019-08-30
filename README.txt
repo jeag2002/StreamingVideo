@@ -6,8 +6,10 @@ ffmpeg N-94567-gc294f38c91
 
 Projects:
 
+
 WebRTCNodeJSPeerToPeer     ==> Peer to Peer (two browsers) using a signaling server as a middleware. Node JS. 
-                               (Note: install previously Js packets node-static, and socket.io. Remove caches)
+                               (Note: install previously Js packets node-static, and socket.io. Remove caches) 
+                               (works only in chrome)
 
 NodeJSExpress              ==> Streaming video through a microservice using Express.JS library
 
