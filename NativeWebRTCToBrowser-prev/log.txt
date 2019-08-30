@@ -1,0 +1,2050 @@
+14:03:42 [debug] [application.cpp(45)] Create
+14:03:42 [trace] [websocket.cpp(69)] Create
+14:03:42 [trace] [client.cpp(68)] Create
+14:03:42 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+14:03:42 [trace] [client.cpp(80)] Connecting
+14:03:42 [trace] [client.cpp(87)] Socket.IO Connecting
+14:03:42 [trace] [websocket.cpp(301)] On close
+14:03:42 [trace] [client.cpp(314)] On socket close
+14:03:42 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+14:03:42 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+14:03:42 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+14:03:42 [trace] [audiodecoder.cpp(44)] Create: 0
+14:03:42 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+14:03:42 [trace] [videocontext.cpp(36)] Create
+14:03:42 [trace] [videodecoder.cpp(42)] Create: 1
+14:03:42 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+14:03:42 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+14:03:42 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+14:03:42 [trace] [audioresampler.cpp(111)] Create: OK
+14:03:42 [debug] [application.cpp(104)] Wait for shutdown
+14:03:42 [trace] [websocket.cpp(210)] On connect
+14:03:42 [trace] [websocket.cpp(128)] Client request: GET /socket.io/?EIO=4&transport=websocket&t=1566907422 HTTP/1.1
+Connection: Upgrade
+Host: localhost:4500
+Sec-WebSocket-Key: dTZ1WU13N0FpNVZ6M1lKRQ==
+Sec-WebSocket-Version: 13
+Upgrade: websocket
+
+
+14:03:42 [trace] [websocket.cpp(222)] On recv: 129
+14:03:42 [trace] [websocket.cpp(137)] Client response: HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: gyiG233+xq62ciB+4SvFfuIysI8=
+
+
+14:03:42 [trace] [websocket.cpp(153)] Handshake success
+14:03:42 [trace] [client.cpp(232)] On connect
+14:03:42 [debug] [signaler.cpp(154)] Client state changed from Connecting to Connected
+14:03:42 [trace] [websocket.cpp(222)] On recv: 88
+14:03:42 [trace] [client.cpp(326)] On socket recv: 86
+14:03:42 [trace] [packet.cpp(108)] Read raw packet: 0{"sid":"uovitnd0TJaJOmgcAAAA","upgrades":[],"pingInterval":25000,"pingTimeout":60000}
+14:03:42 [trace] [client.cpp(410)] On packet: 0-1-1
+14:03:42 [trace] [client.cpp(352)] On handshake: Connected
+14:03:42 [debug] [client.cpp(364)] On handshake: sid=uovitnd0TJaJOmgcAAAA, pingInterval=25000, pingTimeout=60000
+14:03:42 [trace] [websocket.cpp(222)] On recv: 4
+14:03:42 [trace] [client.cpp(326)] On socket recv: 2
+14:03:42 [trace] [packet.cpp(108)] Read raw packet: 40
+14:03:42 [trace] [client.cpp(410)] On packet: 40-1
+14:03:42 [trace] [client.cpp(374)] On message: 40-1
+14:03:42 [trace] [client.cpp(198)] Announcing
+14:03:42 [trace] [transaction.cpp(37)] Create
+14:03:42 [trace] [transaction.cpp(49)] Send: 35815091
+14:03:42 [trace] [websocket.cpp(104)] Send: 88: 4235815091["announce",{"name":"Video Server","token":"","type":"","user":"videoserver"}]
+14:03:42 [trace] [packettransaction.h(148)] On state change:Running
+14:03:42 [trace] [client.cpp(234)] On announce response:Running
+14:03:42 [trace] [websocket.cpp(222)] On recv: 222
+14:03:42 [trace] [client.cpp(326)] On socket recv: 218
+14:03:42 [trace] [packet.cpp(108)] Read raw packet: 4335815091[{"type":"response","status":200,"message":"Welcome Video Server","data":{"name":"Video Server","token":"","type":"","user":"videoserver","host":"::ffff:127.0.0.1","online":true,"id":"uovitnd0TJaJOmgcAAAA"}}]
+14:03:42 [trace] [client.cpp(410)] On packet: 4335815091
+14:03:42 [trace] [client.cpp(374)] On message: 4335815091
+14:03:42 [trace] [client.cpp(291)] Emit packet:4335815091
+14:03:42 [trace] [client.cpp(365)] Proxying packet:2
+14:03:42 [trace] [transaction.cpp(60)] On potential response: 35815091
+14:03:42 [trace] [transaction.cpp(67)] Check response: 35815091
+14:03:42 [trace] [transaction.cpp(74)] On success
+14:03:42 [trace] [packettransaction.h(175)] Success:4335815091
+14:03:42 [trace] [packettransaction.h(148)] On state change:Success
+14:03:42 [trace] [packettransaction.h(118)] Dispose
+14:03:42 [trace] [memory.cpp(29)] Create
+14:03:42 [trace] [memory.cpp(118)] Create: 00007FF693E52DC0
+14:03:42 [trace] [client.cpp(234)] On announce response:Success
+14:03:42 [trace] [client.cpp(373)] Updating:{
+    "host": "::ffff:127.0.0.1",
+    "id": "uovitnd0TJaJOmgcAAAA",
+    "name": "Video Server",
+    "online": true,
+    "token": "",
+    "type": "",
+    "user": "videoserver"
+}
+14:03:42 [debug] [client.cpp(387)] Peer connected:videoserver|uovitnd0TJaJOmgcAAAA
+14:03:42 [trace] [client.cpp(265)] On online
+14:03:42 [debug] [signaler.cpp(154)] Client state changed from Connected to Online
+14:03:42 [trace] [client.cpp(175)] Broadcasting presence
+14:03:42 [trace] [client.cpp(160)] Create presence
+14:03:42 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "uovitnd0TJaJOmgcAAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "XBZ5nvRM/X9uaT9+",
+    "probe": true,
+    "type": "presence"
+}
+14:03:42 [trace] [websocket.cpp(104)] Send: 267: 421527416052["message",{"data":{"host":"::ffff:127.0.0.1","id":"uovitnd0TJaJOmgcAAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"XBZ5nvRM/X9uaT9+","probe":true,"type":"presence"}]
+14:03:42 [trace] [websocket.cpp(222)] On recv: 48
+14:03:42 [trace] [client.cpp(326)] On socket recv: 46
+14:03:42 [trace] [packet.cpp(108)] Read raw packet: 431527416052[{"type":"response","status":200}]
+14:03:42 [trace] [client.cpp(410)] On packet: 431527416052
+14:03:42 [trace] [client.cpp(374)] On message: 431527416052
+14:03:42 [trace] [client.cpp(291)] Emit packet:431527416052
+14:03:42 [trace] [client.cpp(365)] Proxying packet:1
+14:03:42 [trace] [transaction.cpp(43)] Destroy
+14:03:43 [trace] [websocket.cpp(222)] On recv: 239
+14:03:43 [trace] [client.cpp(326)] On socket recv: 235
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"probe":true,"data":{"user":"demo","name":"Demo User","group":"public","rooms":[],"type":"","host":"::1","online":true,"id":"g_tygYcnc9UeIAl-AAAB"},"type":"presence","id":"d9v20a0qqtr","from":"demo|g_tygYcnc9UeIAl-AAAB"}]
+14:03:43 [trace] [client.cpp(410)] On packet: 42-1["message",{"data":{"group":"public","host":"::1","id":"g_tygYcnc9UeIAl-AAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"d9v20a0qqtr","probe":true,"type":"presence"}]
+14:03:43 [trace] [client.cpp(374)] On message: 42-1["message",{"data":{"group":"public","host":"::1","id":"g_tygYcnc9UeIAl-AAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"d9v20a0qqtr","probe":true,"type":"presence"}]
+14:03:43 [trace] [client.cpp(291)] Emit packet:42-1["message",{"data":{"group":"public","host":"::1","id":"g_tygYcnc9UeIAl-AAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"d9v20a0qqtr","probe":true,"type":"presence"}]
+14:03:43 [trace] [client.cpp(295)] JSON packet:42-1["message",{"data":{"group":"public","host":"::1","id":"g_tygYcnc9UeIAl-AAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"d9v20a0qqtr","probe":true,"type":"presence"}]
+14:03:43 [trace] [client.cpp(299)] Received {
+    "data": {
+        "group": "public",
+        "host": "::1",
+        "id": "g_tygYcnc9UeIAl-AAAB",
+        "name": "Demo User",
+        "online": true,
+        "rooms": [],
+        "type": "",
+        "user": "demo"
+    },
+    "from": "demo|g_tygYcnc9UeIAl-AAAB",
+    "id": "d9v20a0qqtr",
+    "probe": true,
+    "type": "presence"
+}
+14:03:43 [debug] [signaler.cpp(125)] Peer message: demo|g_tygYcnc9UeIAl-AAAB
+14:03:43 [trace] [client.cpp(373)] Updating:{
+    "group": "public",
+    "host": "::1",
+    "id": "g_tygYcnc9UeIAl-AAAB",
+    "name": "Demo User",
+    "online": true,
+    "rooms": [],
+    "type": "",
+    "user": "demo"
+}
+14:03:43 [debug] [signaler.cpp(98)] Peer connected: g_tygYcnc9UeIAl-AAAB
+14:03:43 [debug] [videopacketsource.cpp(84)] Start
+14:03:43 [debug] [peer.cpp(197)] g_tygYcnc9UeIAl-AAAB: On renegotiation needed
+14:03:43 [debug] [client.cpp(387)] Peer connected:demo|g_tygYcnc9UeIAl-AAAB
+14:03:43 [trace] [client.cpp(186)] Sending presence
+14:03:43 [trace] [client.cpp(160)] Create presence
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "uovitnd0TJaJOmgcAAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "tzTOX0gxdb0VRiCz",
+    "probe": false,
+    "to": "demo|g_tygYcnc9UeIAl-AAAB",
+    "type": "presence"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 300: 42731891696["message",{"data":{"host":"::ffff:127.0.0.1","id":"uovitnd0TJaJOmgcAAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"tzTOX0gxdb0VRiCz","probe":false,"to":"demo|g_tygYcnc9UeIAl-AAAB","type":"presence"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43731891696[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43731891696
+14:03:43 [trace] [client.cpp(374)] On message: 43731891696
+14:03:43 [trace] [client.cpp(291)] Emit packet:43731891696
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [debug] [peer.cpp(255)] g_tygYcnc9UeIAl-AAAB: Set local description
+14:03:43 [debug] [peer.cpp(165)] g_tygYcnc9UeIAl-AAAB: On signaling state change: 1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "U+oHNPKFhivAw4h9",
+    "offer": {
+        "sdp": "v=0\r\no=- 748200182053997597 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:eYwW\r\na=ice-pwd:x93Ip7Kj4uD/Fx7fH4VVhTOH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 42:D3:C3:5B:9B:A7:F9:29:A7:DC:BA:58:68:B4:2F:6E:BE:8F:AB:E7:51:D5:67:A6:80:9A:89:03:1F:1F:B2:41\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2922958127 cname:l9UmSRfGCipCwb6R\r\na=ssrc:2922958127 msid:stream_label audio_label\r\na=ssrc:2922958127 mslabel:stream_label\r\na=ssrc:2922958127 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:eYwW\r\na=ice-pwd:x93Ip7Kj4uD/Fx7fH4VVhTOH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 42:D3:C3:5B:9B:A7:F9:29:A7:DC:BA:58:68:B4:2F:6E:BE:8F:AB:E7:51:D5:67:A6:80:9A:89:03:1F:1F:B2:41\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2655534685 3923601666\r\na=ssrc:2655534685 cname:l9UmSRfGCipCwb6R\r\na=ssrc:2655534685 msid:stream_label video_label\r\na=ssrc:2655534685 mslabel:stream_label\r\na=ssrc:2655534685 label:video_label\r\na=ssrc:3923601666 cname:l9UmSRfGCipCwb6R\r\na=ssrc:3923601666 msid:stream_label video_label\r\na=ssrc:3923601666 mslabel:stream_label\r\na=ssrc:3923601666 label:video_label\r\n",
+        "type": "offer"
+    },
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 2974: 42492979489["message",{"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"U+oHNPKFhivAw4h9","offer":{"sdp":"v=0\r\no=- 748200182053997597 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:eYwW\r\na=ice-pwd:x93Ip7Kj4uD/Fx7fH4VVhTOH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 42:D3:C3:5B:9B:A7:F9:29:A7:DC:BA:58:68:B4:2F:6E:BE:8F:AB:E7:51:D5:67:A6:80:9A:89:03:1F:1F:B2:41\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2922958127 cname:l9UmSRfGCipCwb6R\r\na=ssrc:2922958127 msid:stream_label audio_label\r\na=ssrc:2922958127 mslabel:stream_label\r\na=ssrc:2922958127 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:eYwW\r\na=ice-pwd:x93Ip7Kj4uD/Fx7fH4VVhTOH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 42:D3:C3:5B:9B:A7:F9:29:A7:DC:BA:58:68:B4:2F:6E:BE:8F:AB:E7:51:D5:67:A6:80:9A:89:03:1F:1F:B2:41\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2655534685 3923601666\r\na=ssrc:2655534685 cname:l9UmSRfGCipCwb6R\r\na=ssrc:2655534685 msid:stream_label video_label\r\na=ssrc:2655534685 mslabel:stream_label\r\na=ssrc:2655534685 label:video_label\r\na=ssrc:3923601666 cname:l9UmSRfGCipCwb6R\r\na=ssrc:3923601666 msid:stream_label video_label\r\na=ssrc:3923601666 mslabel:stream_label\r\na=ssrc:3923601666 label:video_label\r\n","type":"offer"},"type":"message"}]
+14:03:43 [debug] [peer.cpp(329)] On SDP parse success
+14:03:43 [debug] [peer.cpp(191)] g_tygYcnc9UeIAl-AAAB: On ICE gathering change: 1
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43492979489[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43492979489
+14:03:43 [trace] [client.cpp(374)] On message: 43492979489
+14:03:43 [trace] [client.cpp(291)] Emit packet:43492979489
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:775506347 1 udp 2122260223 192.168.51.20 59768 typ host generation 0 ufrag eYwW network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "AOI6dEGOGK8IYH8S",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 289: 42514267180["message",{"candidate":{"candidate":"candidate:775506347 1 udp 2122260223 192.168.51.20 59768 typ host generation 0 ufrag eYwW network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"AOI6dEGOGK8IYH8S","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43514267180[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43514267180
+14:03:43 [trace] [client.cpp(374)] On message: 43514267180
+14:03:43 [trace] [client.cpp(291)] Emit packet:43514267180
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122194687 192.168.56.1 59769 typ host generation 0 ufrag eYwW network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "8L+HF2/iaZQwkmXT",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 290: 422069703810["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122194687 192.168.56.1 59769 typ host generation 0 ufrag eYwW network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"8L+HF2/iaZQwkmXT","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 48
+14:03:43 [trace] [client.cpp(326)] On socket recv: 46
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 432069703810[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 432069703810
+14:03:43 [trace] [client.cpp(374)] On message: 432069703810
+14:03:43 [trace] [client.cpp(291)] Emit packet:432069703810
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122129151 192.168.99.1 59770 typ host generation 0 ufrag eYwW network-id 3 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "DixrAJ9Opqso+rOM",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 289: 42367717152["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122129151 192.168.99.1 59770 typ host generation 0 ufrag eYwW network-id 3 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"DixrAJ9Opqso+rOM","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43367717152[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43367717152
+14:03:43 [trace] [client.cpp(374)] On message: 43367717152
+14:03:43 [trace] [client.cpp(291)] Emit packet:43367717152
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:775506347 1 udp 2122260223 192.168.51.20 59771 typ host generation 0 ufrag eYwW network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "FziLBF3jHON72Ylx",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 290: 421377298050["message",{"candidate":{"candidate":"candidate:775506347 1 udp 2122260223 192.168.51.20 59771 typ host generation 0 ufrag eYwW network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"FziLBF3jHON72Ylx","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 48
+14:03:43 [trace] [client.cpp(326)] On socket recv: 46
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 431377298050[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 431377298050
+14:03:43 [trace] [client.cpp(374)] On message: 431377298050
+14:03:43 [trace] [client.cpp(291)] Emit packet:431377298050
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122194687 192.168.56.1 59772 typ host generation 0 ufrag eYwW network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "dgaFtECN3qJRcJru",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 289: 42573383127["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122194687 192.168.56.1 59772 typ host generation 0 ufrag eYwW network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"dgaFtECN3qJRcJru","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43573383127[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43573383127
+14:03:43 [trace] [client.cpp(374)] On message: 43573383127
+14:03:43 [trace] [client.cpp(291)] Emit packet:43573383127
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122129151 192.168.99.1 59773 typ host generation 0 ufrag eYwW network-id 3 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "4uHFqy8ILA2kJHf1",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 290: 421375405840["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122129151 192.168.99.1 59773 typ host generation 0 ufrag eYwW network-id 3 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"4uHFqy8ILA2kJHf1","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 48
+14:03:43 [trace] [client.cpp(326)] On socket recv: 46
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 431375405840[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 431375405840
+14:03:43 [trace] [client.cpp(374)] On message: 431375405840
+14:03:43 [trace] [client.cpp(291)] Emit packet:431375405840
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1622848859 1 tcp 1518280447 192.168.51.20 49314 typ host tcptype passive generation 0 ufrag eYwW network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "Y0EkNMOL0FHXLYFk",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 307: 422133674180["message",{"candidate":{"candidate":"candidate:1622848859 1 tcp 1518280447 192.168.51.20 49314 typ host tcptype passive generation 0 ufrag eYwW network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"Y0EkNMOL0FHXLYFk","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 48
+14:03:43 [trace] [client.cpp(326)] On socket recv: 46
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 432133674180[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 432133674180
+14:03:43 [trace] [client.cpp(374)] On message: 432133674180
+14:03:43 [trace] [client.cpp(291)] Emit packet:432133674180
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518214911 192.168.56.1 49315 typ host tcptype passive generation 0 ufrag eYwW network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "id": "PJkXQRu41V0ErTIO",
+    "type": "message"
+}
+14:03:43 [trace] [websocket.cpp(104)] Send: 305: 42186895905["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518214911 192.168.56.1 49315 typ host tcptype passive generation 0 ufrag eYwW network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|uovitnd0TJaJOmgcAAAA","id":"PJkXQRu41V0ErTIO","type":"message"}]
+14:03:43 [trace] [websocket.cpp(222)] On recv: 47
+14:03:43 [trace] [client.cpp(326)] On socket recv: 45
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 43186895905[{"type":"response","status":200}]
+14:03:43 [trace] [client.cpp(410)] On packet: 43186895905
+14:03:43 [trace] [client.cpp(374)] On message: 43186895905
+14:03:43 [trace] [client.cpp(291)] Emit packet:43186895905
+14:03:43 [trace] [client.cpp(365)] Proxying packet:1
+14:03:43 [trace] [websocket.cpp(222)] On recv: 2411
+14:03:43 [trace] [client.cpp(326)] On socket recv: 2407
+14:03:43 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"to":"videoserver|uovitnd0TJaJOmgcAAAA","type":"message","answer":{"type":"answer","sdp":"v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n"},"id":"gdgy6nxwqyn","from":"demo|g_tygYcnc9UeIAl-AAAB"}]
+14:03:43 [trace] [client.cpp(410)] On packet: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"gdgy6nxwqyn","to":"videoserver|uovitnd0TJaJOmgcAAAA","type":"message"}]
+14:03:43 [trace] [client.cpp(374)] On message: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"gdgy6nxwqyn","to":"videoserver|uovitnd0TJaJOmgcAAAA","type":"message"}]
+14:03:43 [trace] [client.cpp(291)] Emit packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"gdgy6nxwqyn","to":"videoserver|uovitnd0TJaJOmgcAAAA","type":"message"}]
+14:03:43 [trace] [client.cpp(295)] JSON packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|g_tygYcnc9UeIAl-AAAB","id":"gdgy6nxwqyn","to":"videoserver|uovitnd0TJaJOmgcAAAA","type":"message"}]
+14:03:43 [trace] [client.cpp(299)] Received {
+    "answer": {
+        "sdp": "v=0\r\no=- 6690546790276335516 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:uPrN\r\na=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq\r\na=ice-options:trickle\r\na=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n",
+        "type": "answer"
+    },
+    "from": "demo|g_tygYcnc9UeIAl-AAAB",
+    "id": "gdgy6nxwqyn",
+    "to": "videoserver|uovitnd0TJaJOmgcAAAA",
+    "type": "message"
+}
+14:03:43 [debug] [signaler.cpp(125)] Peer message: demo|g_tygYcnc9UeIAl-AAAB
+14:03:43 [debug] [peer.cpp(130)] g_tygYcnc9UeIAl-AAAB: Receive answer: v=0
+o=- 6690546790276335516 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video
+a=msid-semantic: WMS
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:uPrN
+a=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq
+a=ice-options:trickle
+a=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31
+a=setup:active
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+m=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:uPrN
+a=ice-pwd:bLN50g+yvtYDVh1Xal/2uMXq
+a=ice-options:trickle
+a=fingerprint:sha-256 86:8E:53:79:A0:57:A5:5E:DD:A5:65:E1:9E:46:3A:E4:05:E1:D8:3C:60:F9:09:34:5A:3E:40:53:2F:70:0E:31
+a=setup:active
+a=mid:video
+a=extmap:2 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:100 red/90000
+a=rtpmap:127 ulpfec/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+
+14:03:43 [debug] [peer.cpp(165)] g_tygYcnc9UeIAl-AAAB: On signaling state change: 0
+14:03:43 [trace] [packetstream.cpp(52)] Start
+14:03:43 [trace] [packetstream.cpp(629)] On state change: None => Active
+14:03:43 [trace] [packetstream.cpp(545)] Start source: 0000022E4943F1D0
+14:03:43 [trace] [mediacapture.cpp(125)] Starting
+14:03:43 [trace] [mediacapture.cpp(131)] Initializing thread
+14:03:43 [trace] [mediacapture.cpp(163)] Running
+14:03:43 [trace] [mediacapture.cpp(183)] Looping
+14:03:43 [trace] [mediacapture.cpp(193)] Read frame: pts=0, dts=0
+14:03:43 [trace] [audioresampler.cpp(167)] Resizing resampler buffer: 0
+14:03:43 [trace] [mediacapture.cpp(155)] Emit: 8064
+14:03:43 [trace] [packetstream.cpp(281)] Processing packet: Active: PlanarAudioPacket
+14:03:43 [trace] [packetstream.cpp(336)] Proxying packet: Active: PlanarAudioPacket
+14:03:43 [trace] [packetstream.cpp(360)] Emit: 8064
+14:03:43 [trace] [audiopacketmodule.cpp(92)] Audio frame captured
+03:59:43 [debug] [application.cpp(45)] Create
+03:59:43 [trace] [websocket.cpp(69)] Create
+03:59:43 [trace] [client.cpp(68)] Create
+03:59:43 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+03:59:44 [trace] [client.cpp(80)] Connecting
+03:59:44 [trace] [client.cpp(87)] Socket.IO Connecting
+03:59:44 [trace] [websocket.cpp(301)] On close
+03:59:44 [trace] [client.cpp(314)] On socket close
+03:59:44 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+03:59:44 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+03:59:44 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+03:59:44 [trace] [audiodecoder.cpp(44)] Create: 0
+03:59:44 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+03:59:44 [trace] [videocontext.cpp(36)] Create
+03:59:44 [trace] [videodecoder.cpp(42)] Create: 1
+03:59:44 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+03:59:44 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+03:59:44 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+03:59:44 [trace] [audioresampler.cpp(111)] Create: OK
+03:59:44 [debug] [application.cpp(104)] Wait for shutdown
+03:59:44 [trace] [websocket.cpp(210)] On connect
+03:59:44 [trace] [websocket.cpp(128)] Client request: GET /socket.io/?EIO=4&transport=websocket&t=1567043984 HTTP/1.1
+Connection: Upgrade
+Host: localhost:4500
+Sec-WebSocket-Key: dnA0VjR6YVIxamYwa2xMeQ==
+Sec-WebSocket-Version: 13
+Upgrade: websocket
+
+
+03:59:45 [trace] [websocket.cpp(222)] On recv: 129
+03:59:45 [trace] [websocket.cpp(137)] Client response: HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 4r8zfzVPpDtKoc9ELQvONvGgSPk=
+
+
+03:59:45 [trace] [websocket.cpp(153)] Handshake success
+03:59:45 [trace] [client.cpp(232)] On connect
+03:59:45 [debug] [signaler.cpp(154)] Client state changed from Connecting to Connected
+03:59:45 [trace] [websocket.cpp(222)] On recv: 92
+03:59:45 [trace] [websocket.cpp(263)] Splitting joined packet at 88 of 92
+03:59:45 [trace] [client.cpp(326)] On socket recv: 86
+03:59:45 [trace] [packet.cpp(108)] Read raw packet: 0{"sid":"5GIDiHylCaDvczY9AAAA","upgrades":[],"pingInterval":25000,"pingTimeout":60000}
+03:59:45 [trace] [client.cpp(410)] On packet: 0-1-1
+03:59:45 [trace] [client.cpp(352)] On handshake: Connected
+03:59:45 [debug] [client.cpp(364)] On handshake: sid=5GIDiHylCaDvczY9AAAA, pingInterval=25000, pingTimeout=60000
+03:59:45 [trace] [client.cpp(326)] On socket recv: 2
+03:59:45 [trace] [packet.cpp(108)] Read raw packet: 40
+03:59:45 [trace] [client.cpp(410)] On packet: 40-1
+03:59:45 [trace] [client.cpp(374)] On message: 40-1
+03:59:45 [trace] [client.cpp(198)] Announcing
+03:59:45 [trace] [transaction.cpp(37)] Create
+03:59:45 [trace] [transaction.cpp(49)] Send: 1714481941
+03:59:45 [trace] [websocket.cpp(104)] Send: 90: 421714481941["announce",{"name":"Video Server","token":"","type":"","user":"videoserver"}]
+03:59:45 [trace] [packettransaction.h(148)] On state change:Running
+03:59:45 [trace] [client.cpp(234)] On announce response:Running
+03:59:45 [trace] [websocket.cpp(222)] On recv: 224
+03:59:45 [trace] [client.cpp(326)] On socket recv: 220
+03:59:45 [trace] [packet.cpp(108)] Read raw packet: 431714481941[{"type":"response","status":200,"message":"Welcome Video Server","data":{"name":"Video Server","token":"","type":"","user":"videoserver","host":"::ffff:127.0.0.1","online":true,"id":"5GIDiHylCaDvczY9AAAA"}}]
+03:59:45 [trace] [client.cpp(410)] On packet: 431714481941
+03:59:45 [trace] [client.cpp(374)] On message: 431714481941
+03:59:45 [trace] [client.cpp(291)] Emit packet:431714481941
+03:59:45 [trace] [client.cpp(365)] Proxying packet:2
+03:59:45 [trace] [transaction.cpp(60)] On potential response: 1714481941
+03:59:45 [trace] [transaction.cpp(67)] Check response: 1714481941
+03:59:45 [trace] [transaction.cpp(74)] On success
+03:59:45 [trace] [packettransaction.h(175)] Success:431714481941
+03:59:45 [trace] [packettransaction.h(148)] On state change:Success
+03:59:45 [trace] [packettransaction.h(118)] Dispose
+03:59:45 [trace] [memory.cpp(29)] Create
+03:59:45 [trace] [memory.cpp(118)] Create: 00007FF79FB12DC0
+03:59:45 [trace] [client.cpp(234)] On announce response:Success
+03:59:45 [trace] [client.cpp(373)] Updating:{
+    "host": "::ffff:127.0.0.1",
+    "id": "5GIDiHylCaDvczY9AAAA",
+    "name": "Video Server",
+    "online": true,
+    "token": "",
+    "type": "",
+    "user": "videoserver"
+}
+03:59:45 [debug] [client.cpp(387)] Peer connected:videoserver|5GIDiHylCaDvczY9AAAA
+03:59:45 [trace] [client.cpp(265)] On online
+03:59:45 [debug] [signaler.cpp(154)] Client state changed from Connected to Online
+03:59:45 [trace] [client.cpp(175)] Broadcasting presence
+03:59:45 [trace] [client.cpp(160)] Create presence
+03:59:45 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "5GIDiHylCaDvczY9AAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "3Z+4xaIcZC1oC/yH",
+    "probe": true,
+    "type": "presence"
+}
+03:59:45 [trace] [websocket.cpp(104)] Send: 267: 421432659253["message",{"data":{"host":"::ffff:127.0.0.1","id":"5GIDiHylCaDvczY9AAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"3Z+4xaIcZC1oC/yH","probe":true,"type":"presence"}]
+03:59:45 [trace] [websocket.cpp(222)] On recv: 48
+03:59:45 [trace] [client.cpp(326)] On socket recv: 46
+03:59:45 [trace] [packet.cpp(108)] Read raw packet: 431432659253[{"type":"response","status":200}]
+03:59:45 [trace] [client.cpp(410)] On packet: 431432659253
+03:59:45 [trace] [client.cpp(374)] On message: 431432659253
+03:59:45 [trace] [client.cpp(291)] Emit packet:431432659253
+03:59:45 [trace] [client.cpp(365)] Proxying packet:1
+03:59:45 [trace] [transaction.cpp(43)] Destroy
+03:59:50 [trace] [websocket.cpp(222)] On recv: 239
+03:59:50 [trace] [client.cpp(326)] On socket recv: 235
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"probe":true,"data":{"user":"demo","name":"Demo User","group":"public","rooms":[],"type":"","host":"::1","online":true,"id":"Sz4xdWcUT54oPRPmAAAB"},"type":"presence","id":"gdhx448w9i7","from":"demo|Sz4xdWcUT54oPRPmAAAB"}]
+03:59:50 [trace] [client.cpp(410)] On packet: 42-1["message",{"data":{"group":"public","host":"::1","id":"Sz4xdWcUT54oPRPmAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"gdhx448w9i7","probe":true,"type":"presence"}]
+03:59:50 [trace] [client.cpp(374)] On message: 42-1["message",{"data":{"group":"public","host":"::1","id":"Sz4xdWcUT54oPRPmAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"gdhx448w9i7","probe":true,"type":"presence"}]
+03:59:50 [trace] [client.cpp(291)] Emit packet:42-1["message",{"data":{"group":"public","host":"::1","id":"Sz4xdWcUT54oPRPmAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"gdhx448w9i7","probe":true,"type":"presence"}]
+03:59:50 [trace] [client.cpp(295)] JSON packet:42-1["message",{"data":{"group":"public","host":"::1","id":"Sz4xdWcUT54oPRPmAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"gdhx448w9i7","probe":true,"type":"presence"}]
+03:59:50 [trace] [client.cpp(299)] Received {
+    "data": {
+        "group": "public",
+        "host": "::1",
+        "id": "Sz4xdWcUT54oPRPmAAAB",
+        "name": "Demo User",
+        "online": true,
+        "rooms": [],
+        "type": "",
+        "user": "demo"
+    },
+    "from": "demo|Sz4xdWcUT54oPRPmAAAB",
+    "id": "gdhx448w9i7",
+    "probe": true,
+    "type": "presence"
+}
+03:59:50 [debug] [signaler.cpp(125)] Peer message: demo|Sz4xdWcUT54oPRPmAAAB
+03:59:50 [trace] [client.cpp(373)] Updating:{
+    "group": "public",
+    "host": "::1",
+    "id": "Sz4xdWcUT54oPRPmAAAB",
+    "name": "Demo User",
+    "online": true,
+    "rooms": [],
+    "type": "",
+    "user": "demo"
+}
+03:59:50 [debug] [signaler.cpp(98)] Peer connected: Sz4xdWcUT54oPRPmAAAB
+03:59:50 [debug] [videopacketsource.cpp(84)] Start
+03:59:50 [debug] [peer.cpp(197)] Sz4xdWcUT54oPRPmAAAB: On renegotiation needed
+03:59:50 [debug] [client.cpp(387)] Peer connected:demo|Sz4xdWcUT54oPRPmAAAB
+03:59:50 [trace] [client.cpp(186)] Sending presence
+03:59:50 [trace] [client.cpp(160)] Create presence
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "5GIDiHylCaDvczY9AAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "zRfKe7a7tWuIaAMH",
+    "probe": false,
+    "to": "demo|Sz4xdWcUT54oPRPmAAAB",
+    "type": "presence"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 300: 42503285281["message",{"data":{"host":"::ffff:127.0.0.1","id":"5GIDiHylCaDvczY9AAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"zRfKe7a7tWuIaAMH","probe":false,"to":"demo|Sz4xdWcUT54oPRPmAAAB","type":"presence"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 47
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43503285281[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43503285281
+03:59:50 [trace] [client.cpp(374)] On message: 43503285281
+03:59:50 [trace] [client.cpp(291)] Emit packet:43503285281
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [debug] [peer.cpp(255)] Sz4xdWcUT54oPRPmAAAB: Set local description
+03:59:50 [debug] [peer.cpp(165)] Sz4xdWcUT54oPRPmAAAB: On signaling state change: 1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "BDxd5QMxnP7IBowi",
+    "offer": {
+        "sdp": "v=0\r\no=- 1253728188183551788 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q4r9\r\na=ice-pwd:PdQ49updqrGX+ASTSSQ2RTAQ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 E3:F6:C8:9D:65:A3:F0:DC:6F:33:F3:B7:E2:FC:46:22:09:8A:C4:5F:F8:B3:67:40:8D:98:11:F9:40:D1:7C:C2\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2578457869 cname:n7QFctqb7Rw747rN\r\na=ssrc:2578457869 msid:stream_label audio_label\r\na=ssrc:2578457869 mslabel:stream_label\r\na=ssrc:2578457869 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q4r9\r\na=ice-pwd:PdQ49updqrGX+ASTSSQ2RTAQ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 E3:F6:C8:9D:65:A3:F0:DC:6F:33:F3:B7:E2:FC:46:22:09:8A:C4:5F:F8:B3:67:40:8D:98:11:F9:40:D1:7C:C2\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2634917942 400922641\r\na=ssrc:2634917942 cname:n7QFctqb7Rw747rN\r\na=ssrc:2634917942 msid:stream_label video_label\r\na=ssrc:2634917942 mslabel:stream_label\r\na=ssrc:2634917942 label:video_label\r\na=ssrc:400922641 cname:n7QFctqb7Rw747rN\r\na=ssrc:400922641 msid:stream_label video_label\r\na=ssrc:400922641 mslabel:stream_label\r\na=ssrc:400922641 label:video_label\r\n",
+        "type": "offer"
+    },
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 2970: 42478239043["message",{"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"BDxd5QMxnP7IBowi","offer":{"sdp":"v=0\r\no=- 1253728188183551788 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q4r9\r\na=ice-pwd:PdQ49updqrGX+ASTSSQ2RTAQ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 E3:F6:C8:9D:65:A3:F0:DC:6F:33:F3:B7:E2:FC:46:22:09:8A:C4:5F:F8:B3:67:40:8D:98:11:F9:40:D1:7C:C2\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:2578457869 cname:n7QFctqb7Rw747rN\r\na=ssrc:2578457869 msid:stream_label audio_label\r\na=ssrc:2578457869 mslabel:stream_label\r\na=ssrc:2578457869 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q4r9\r\na=ice-pwd:PdQ49updqrGX+ASTSSQ2RTAQ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 E3:F6:C8:9D:65:A3:F0:DC:6F:33:F3:B7:E2:FC:46:22:09:8A:C4:5F:F8:B3:67:40:8D:98:11:F9:40:D1:7C:C2\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2634917942 400922641\r\na=ssrc:2634917942 cname:n7QFctqb7Rw747rN\r\na=ssrc:2634917942 msid:stream_label video_label\r\na=ssrc:2634917942 mslabel:stream_label\r\na=ssrc:2634917942 label:video_label\r\na=ssrc:400922641 cname:n7QFctqb7Rw747rN\r\na=ssrc:400922641 msid:stream_label video_label\r\na=ssrc:400922641 mslabel:stream_label\r\na=ssrc:400922641 label:video_label\r\n","type":"offer"},"type":"message"}]
+03:59:50 [debug] [peer.cpp(329)] On SDP parse success
+03:59:50 [debug] [peer.cpp(191)] Sz4xdWcUT54oPRPmAAAB: On ICE gathering change: 1
+03:59:50 [trace] [websocket.cpp(222)] On recv: 47
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43478239043[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43478239043
+03:59:50 [trace] [client.cpp(374)] On message: 43478239043
+03:59:50 [trace] [client.cpp(291)] Emit packet:43478239043
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 54739 typ host generation 0 ufrag Q4r9 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "vlph+8Jm4vKlDTlV",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 288: 4244399168["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 54739 typ host generation 0 ufrag Q4r9 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"vlph+8Jm4vKlDTlV","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 46
+03:59:50 [trace] [client.cpp(326)] On socket recv: 44
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 4344399168[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 4344399168
+03:59:50 [trace] [client.cpp(374)] On message: 4344399168
+03:59:50 [trace] [client.cpp(291)] Emit packet:4344399168
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 54740 typ host generation 0 ufrag Q4r9 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "cypAdIj/vahL7z81",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 290: 421465167236["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 54740 typ host generation 0 ufrag Q4r9 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"cypAdIj/vahL7z81","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431465167236[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431465167236
+03:59:50 [trace] [client.cpp(374)] On message: 431465167236
+03:59:50 [trace] [client.cpp(291)] Emit packet:431465167236
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 54741 typ host generation 0 ufrag Q4r9 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "egpI+fkmXpIe+BKV",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 289: 421871014487["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 54741 typ host generation 0 ufrag Q4r9 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"egpI+fkmXpIe+BKV","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431871014487[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431871014487
+03:59:50 [trace] [client.cpp(374)] On message: 431871014487
+03:59:50 [trace] [client.cpp(291)] Emit packet:431871014487
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 54742 typ host generation 0 ufrag Q4r9 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "/xT76/dmgK1bCTSC",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 290: 421754351486["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 54742 typ host generation 0 ufrag Q4r9 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"/xT76/dmgK1bCTSC","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431754351486[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431754351486
+03:59:50 [trace] [client.cpp(374)] On message: 431754351486
+03:59:50 [trace] [client.cpp(291)] Emit packet:431754351486
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 54743 typ host generation 0 ufrag Q4r9 network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "qPLawuPbsD/47rQa",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 288: 4222133026["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 54743 typ host generation 0 ufrag Q4r9 network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"qPLawuPbsD/47rQa","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 46
+03:59:50 [trace] [client.cpp(326)] On socket recv: 44
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 4322133026[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 4322133026
+03:59:50 [trace] [client.cpp(374)] On message: 4322133026
+03:59:50 [trace] [client.cpp(291)] Emit packet:4322133026
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 54744 typ host generation 0 ufrag Q4r9 network-id 1 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "t3Ba+UA+rn/6xadz",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 288: 42336861409["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 54744 typ host generation 0 ufrag Q4r9 network-id 1 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"t3Ba+UA+rn/6xadz","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 47
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43336861409[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43336861409
+03:59:50 [trace] [client.cpp(374)] On message: 43336861409
+03:59:50 [trace] [client.cpp(291)] Emit packet:43336861409
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 61874 typ host tcptype passive generation 0 ufrag Q4r9 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "z4OBGDEaCN8CmN9p",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 305: 42320892422["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 61874 typ host tcptype passive generation 0 ufrag Q4r9 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"z4OBGDEaCN8CmN9p","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 47
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43320892422[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43320892422
+03:59:50 [trace] [client.cpp(374)] On message: 43320892422
+03:59:50 [trace] [client.cpp(291)] Emit packet:43320892422
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:3401144682 1 tcp 1518214911 192.168.99.1 61875 typ host tcptype passive generation 0 ufrag Q4r9 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "BwlWC0fnNrOyvAAy",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 306: 421177046014["message",{"candidate":{"candidate":"candidate:3401144682 1 tcp 1518214911 192.168.99.1 61875 typ host tcptype passive generation 0 ufrag Q4r9 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"BwlWC0fnNrOyvAAy","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431177046014[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431177046014
+03:59:50 [trace] [client.cpp(374)] On message: 431177046014
+03:59:50 [trace] [client.cpp(291)] Emit packet:431177046014
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1210811951 1 tcp 1518149375 192.168.1.34 61876 typ host tcptype passive generation 0 ufrag Q4r9 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "ioZN/U7sKGT62V27",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 305: 42787116958["message",{"candidate":{"candidate":"candidate:1210811951 1 tcp 1518149375 192.168.1.34 61876 typ host tcptype passive generation 0 ufrag Q4r9 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"ioZN/U7sKGT62V27","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 47
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43787116958[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43787116958
+03:59:50 [trace] [client.cpp(374)] On message: 43787116958
+03:59:50 [trace] [client.cpp(291)] Emit packet:43787116958
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 61877 typ host tcptype passive generation 0 ufrag Q4r9 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "c+9mmzvr12+FU/e5",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 306: 421236033843["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 61877 typ host tcptype passive generation 0 ufrag Q4r9 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"c+9mmzvr12+FU/e5","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431236033843[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431236033843
+03:59:50 [trace] [client.cpp(374)] On message: 431236033843
+03:59:50 [trace] [client.cpp(291)] Emit packet:431236033843
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:3401144682 1 tcp 1518214911 192.168.99.1 61878 typ host tcptype passive generation 0 ufrag Q4r9 network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "bIkuShNygdIp5o+q",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 306: 421606179897["message",{"candidate":{"candidate":"candidate:3401144682 1 tcp 1518214911 192.168.99.1 61878 typ host tcptype passive generation 0 ufrag Q4r9 network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"bIkuShNygdIp5o+q","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 48
+03:59:50 [trace] [client.cpp(326)] On socket recv: 46
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 431606179897[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 431606179897
+03:59:50 [trace] [client.cpp(374)] On message: 431606179897
+03:59:50 [trace] [client.cpp(291)] Emit packet:431606179897
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1210811951 1 tcp 1518149375 192.168.1.34 61879 typ host tcptype passive generation 0 ufrag Q4r9 network-id 1 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "id": "F5JJMyCoTbJTAl4V",
+    "type": "message"
+}
+03:59:50 [trace] [websocket.cpp(104)] Send: 305: 42237358919["message",{"candidate":{"candidate":"candidate:1210811951 1 tcp 1518149375 192.168.1.34 61879 typ host tcptype passive generation 0 ufrag Q4r9 network-id 1 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|5GIDiHylCaDvczY9AAAA","id":"F5JJMyCoTbJTAl4V","type":"message"}]
+03:59:50 [trace] [websocket.cpp(222)] On recv: 2458
+03:59:50 [trace] [websocket.cpp(263)] Splitting joined packet at 47 of 2458
+03:59:50 [trace] [client.cpp(326)] On socket recv: 45
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 43237358919[{"type":"response","status":200}]
+03:59:50 [trace] [client.cpp(410)] On packet: 43237358919
+03:59:50 [trace] [client.cpp(374)] On message: 43237358919
+03:59:50 [trace] [client.cpp(291)] Emit packet:43237358919
+03:59:50 [trace] [client.cpp(365)] Proxying packet:1
+03:59:50 [trace] [client.cpp(326)] On socket recv: 2407
+03:59:50 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"to":"videoserver|5GIDiHylCaDvczY9AAAA","type":"message","answer":{"type":"answer","sdp":"v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n"},"id":"f0i9emk7u1d","from":"demo|Sz4xdWcUT54oPRPmAAAB"}]
+03:59:50 [trace] [client.cpp(410)] On packet: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"f0i9emk7u1d","to":"videoserver|5GIDiHylCaDvczY9AAAA","type":"message"}]
+03:59:50 [trace] [client.cpp(374)] On message: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"f0i9emk7u1d","to":"videoserver|5GIDiHylCaDvczY9AAAA","type":"message"}]
+03:59:50 [trace] [client.cpp(291)] Emit packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"f0i9emk7u1d","to":"videoserver|5GIDiHylCaDvczY9AAAA","type":"message"}]
+03:59:50 [trace] [client.cpp(295)] JSON packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|Sz4xdWcUT54oPRPmAAAB","id":"f0i9emk7u1d","to":"videoserver|5GIDiHylCaDvczY9AAAA","type":"message"}]
+03:59:50 [trace] [client.cpp(299)] Received {
+    "answer": {
+        "sdp": "v=0\r\no=- 1070163998759672198 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Geej\r\na=ice-pwd:HkbqV23+PytNfkbvR/zATwD8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n",
+        "type": "answer"
+    },
+    "from": "demo|Sz4xdWcUT54oPRPmAAAB",
+    "id": "f0i9emk7u1d",
+    "to": "videoserver|5GIDiHylCaDvczY9AAAA",
+    "type": "message"
+}
+03:59:50 [debug] [signaler.cpp(125)] Peer message: demo|Sz4xdWcUT54oPRPmAAAB
+03:59:50 [debug] [peer.cpp(130)] Sz4xdWcUT54oPRPmAAAB: Receive answer: v=0
+o=- 1070163998759672198 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video
+a=msid-semantic: WMS
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Geej
+a=ice-pwd:HkbqV23+PytNfkbvR/zATwD8
+a=ice-options:trickle
+a=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43
+a=setup:active
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+m=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Geej
+a=ice-pwd:HkbqV23+PytNfkbvR/zATwD8
+a=ice-options:trickle
+a=fingerprint:sha-256 40:6F:B4:73:77:10:41:C2:5F:EB:BF:85:D9:AD:35:D5:C0:AA:2E:A3:61:B3:1D:A7:82:53:87:EE:D0:29:06:43
+a=setup:active
+a=mid:video
+a=extmap:2 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:100 red/90000
+a=rtpmap:127 ulpfec/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+
+03:59:50 [debug] [peer.cpp(165)] Sz4xdWcUT54oPRPmAAAB: On signaling state change: 0
+03:59:50 [trace] [packetstream.cpp(52)] Start
+03:59:50 [trace] [packetstream.cpp(629)] On state change: None => Active
+03:59:50 [trace] [packetstream.cpp(545)] Start source: 000001D5A87AC1F0
+03:59:50 [trace] [mediacapture.cpp(125)] Starting
+03:59:50 [trace] [mediacapture.cpp(131)] Initializing thread
+03:59:50 [trace] [mediacapture.cpp(163)] Running
+03:59:50 [trace] [mediacapture.cpp(183)] Looping
+03:59:50 [trace] [mediacapture.cpp(193)] Read frame: pts=0, dts=0
+03:59:50 [trace] [audioresampler.cpp(167)] Resizing resampler buffer: 0
+03:59:50 [trace] [mediacapture.cpp(155)] Emit: 8064
+03:59:50 [trace] [packetstream.cpp(281)] Processing packet: Active: PlanarAudioPacket
+03:59:50 [trace] [packetstream.cpp(336)] Proxying packet: Active: PlanarAudioPacket
+03:59:50 [trace] [packetstream.cpp(360)] Emit: 8064
+03:59:50 [trace] [audiopacketmodule.cpp(92)] Audio frame captured
+15:09:11 [debug] [application.cpp(45)] Create
+15:09:11 [trace] [websocket.cpp(69)] Create
+15:09:11 [trace] [client.cpp(68)] Create
+15:09:11 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+15:09:12 [trace] [client.cpp(80)] Connecting
+15:09:12 [trace] [client.cpp(87)] Socket.IO Connecting
+15:09:12 [trace] [websocket.cpp(301)] On close
+15:09:12 [trace] [client.cpp(314)] On socket close
+15:09:12 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+15:09:12 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+15:09:12 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+15:09:12 [trace] [audiodecoder.cpp(44)] Create: 0
+15:09:12 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+15:09:12 [trace] [videocontext.cpp(36)] Create
+15:09:12 [trace] [videodecoder.cpp(42)] Create: 1
+15:09:12 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+15:09:12 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+15:09:12 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+15:09:12 [trace] [audioresampler.cpp(111)] Create: OK
+15:09:12 [debug] [application.cpp(104)] Wait for shutdown
+15:09:12 [trace] [websocket.cpp(210)] On connect
+15:09:12 [trace] [websocket.cpp(128)] Client request: GET /socket.io/?EIO=4&transport=websocket&t=1567084152 HTTP/1.1
+Connection: Upgrade
+Host: localhost:4500
+Sec-WebSocket-Key: WVdDOFlKS0R5Tjl2alR5UA==
+Sec-WebSocket-Version: 13
+Upgrade: websocket
+
+
+15:09:12 [trace] [websocket.cpp(222)] On recv: 221
+15:09:12 [trace] [websocket.cpp(137)] Client response: HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: UwwWUoqRxJWNYvO+WTIZfAvqWHg=
+
+V0{"sid":"NcGhocxzgbbDGLsxAAAB","upgrades":[],"pingInterval":25000,"pingTimeout":60000}40
+15:09:12 [trace] [websocket.cpp(153)] Handshake success
+15:09:12 [trace] [client.cpp(232)] On connect
+15:09:12 [debug] [signaler.cpp(154)] Client state changed from Connecting to Connected
+15:09:12 [trace] [websocket.cpp(222)] On recv: 92
+15:09:12 [trace] [websocket.cpp(263)] Splitting joined packet at 88 of 92
+15:09:12 [trace] [client.cpp(326)] On socket recv: 86
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 0{"sid":"NcGhocxzgbbDGLsxAAAB","upgrades":[],"pingInterval":25000,"pingTimeout":60000}
+15:09:12 [trace] [client.cpp(410)] On packet: 0-1-1
+15:09:12 [trace] [client.cpp(352)] On handshake: Connected
+15:09:12 [debug] [client.cpp(364)] On handshake: sid=NcGhocxzgbbDGLsxAAAB, pingInterval=25000, pingTimeout=60000
+15:09:12 [trace] [client.cpp(326)] On socket recv: 2
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 40
+15:09:12 [trace] [client.cpp(410)] On packet: 40-1
+15:09:12 [trace] [client.cpp(374)] On message: 40-1
+15:09:12 [trace] [client.cpp(198)] Announcing
+15:09:12 [trace] [transaction.cpp(37)] Create
+15:09:12 [trace] [transaction.cpp(49)] Send: 1746268367
+15:09:12 [trace] [websocket.cpp(104)] Send: 90: 421746268367["announce",{"name":"Video Server","token":"","type":"","user":"videoserver"}]
+15:09:12 [trace] [packettransaction.h(148)] On state change:Running
+15:09:12 [trace] [client.cpp(234)] On announce response:Running
+15:09:12 [trace] [websocket.cpp(222)] On recv: 224
+15:09:12 [trace] [client.cpp(326)] On socket recv: 220
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431746268367[{"type":"response","status":200,"message":"Welcome Video Server","data":{"name":"Video Server","token":"","type":"","user":"videoserver","host":"::ffff:127.0.0.1","online":true,"id":"NcGhocxzgbbDGLsxAAAB"}}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431746268367
+15:09:12 [trace] [client.cpp(374)] On message: 431746268367
+15:09:12 [trace] [client.cpp(291)] Emit packet:431746268367
+15:09:12 [trace] [client.cpp(365)] Proxying packet:2
+15:09:12 [trace] [transaction.cpp(60)] On potential response: 1746268367
+15:09:12 [trace] [transaction.cpp(67)] Check response: 1746268367
+15:09:12 [trace] [transaction.cpp(74)] On success
+15:09:12 [trace] [packettransaction.h(175)] Success:431746268367
+15:09:12 [trace] [packettransaction.h(148)] On state change:Success
+15:09:12 [trace] [packettransaction.h(118)] Dispose
+15:09:12 [trace] [memory.cpp(29)] Create
+15:09:12 [trace] [memory.cpp(118)] Create: 00007FF6766C2DC0
+15:09:12 [trace] [client.cpp(234)] On announce response:Success
+15:09:12 [trace] [client.cpp(373)] Updating:{
+    "host": "::ffff:127.0.0.1",
+    "id": "NcGhocxzgbbDGLsxAAAB",
+    "name": "Video Server",
+    "online": true,
+    "token": "",
+    "type": "",
+    "user": "videoserver"
+}
+15:09:12 [debug] [client.cpp(387)] Peer connected:videoserver|NcGhocxzgbbDGLsxAAAB
+15:09:12 [trace] [client.cpp(265)] On online
+15:09:12 [debug] [signaler.cpp(154)] Client state changed from Connected to Online
+15:09:12 [trace] [client.cpp(175)] Broadcasting presence
+15:09:12 [trace] [client.cpp(160)] Create presence
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "NcGhocxzgbbDGLsxAAAB",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "i+n/6NWgGIRVg88D",
+    "probe": true,
+    "type": "presence"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 266: 42619200558["message",{"data":{"host":"::ffff:127.0.0.1","id":"NcGhocxzgbbDGLsxAAAB","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"i+n/6NWgGIRVg88D","probe":true,"type":"presence"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 47
+15:09:12 [trace] [client.cpp(326)] On socket recv: 45
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 43619200558[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 43619200558
+15:09:12 [trace] [client.cpp(374)] On message: 43619200558
+15:09:12 [trace] [client.cpp(291)] Emit packet:43619200558
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [websocket.cpp(222)] On recv: 253
+15:09:12 [trace] [client.cpp(326)] On socket recv: 249
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"to":"NcGhocxzgbbDGLsxAAAB","type":"presence","data":{"user":"demo","name":"Demo User","group":"public","rooms":[],"type":"","host":"::1","online":true,"id":"sPN-vOIZjn2ma5wjAAAA"},"id":"ma2o2ye5wq","from":"demo|sPN-vOIZjn2ma5wjAAAA"}]
+15:09:12 [trace] [client.cpp(410)] On packet: 42-1["message",{"data":{"group":"public","host":"::1","id":"sPN-vOIZjn2ma5wjAAAA","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"ma2o2ye5wq","to":"NcGhocxzgbbDGLsxAAAB","type":"presence"}]
+15:09:12 [trace] [client.cpp(374)] On message: 42-1["message",{"data":{"group":"public","host":"::1","id":"sPN-vOIZjn2ma5wjAAAA","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"ma2o2ye5wq","to":"NcGhocxzgbbDGLsxAAAB","type":"presence"}]
+15:09:12 [trace] [client.cpp(291)] Emit packet:42-1["message",{"data":{"group":"public","host":"::1","id":"sPN-vOIZjn2ma5wjAAAA","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"ma2o2ye5wq","to":"NcGhocxzgbbDGLsxAAAB","type":"presence"}]
+15:09:12 [trace] [client.cpp(295)] JSON packet:42-1["message",{"data":{"group":"public","host":"::1","id":"sPN-vOIZjn2ma5wjAAAA","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"ma2o2ye5wq","to":"NcGhocxzgbbDGLsxAAAB","type":"presence"}]
+15:09:12 [trace] [client.cpp(299)] Received {
+    "data": {
+        "group": "public",
+        "host": "::1",
+        "id": "sPN-vOIZjn2ma5wjAAAA",
+        "name": "Demo User",
+        "online": true,
+        "rooms": [],
+        "type": "",
+        "user": "demo"
+    },
+    "from": "demo|sPN-vOIZjn2ma5wjAAAA",
+    "id": "ma2o2ye5wq",
+    "to": "NcGhocxzgbbDGLsxAAAB",
+    "type": "presence"
+}
+15:09:12 [debug] [signaler.cpp(125)] Peer message: demo|sPN-vOIZjn2ma5wjAAAA
+15:09:12 [trace] [client.cpp(373)] Updating:{
+    "group": "public",
+    "host": "::1",
+    "id": "sPN-vOIZjn2ma5wjAAAA",
+    "name": "Demo User",
+    "online": true,
+    "rooms": [],
+    "type": "",
+    "user": "demo"
+}
+15:09:12 [debug] [signaler.cpp(98)] Peer connected: sPN-vOIZjn2ma5wjAAAA
+15:09:12 [debug] [videopacketsource.cpp(84)] Start
+15:09:12 [debug] [peer.cpp(197)] sPN-vOIZjn2ma5wjAAAA: On renegotiation needed
+15:09:12 [debug] [client.cpp(387)] Peer connected:demo|sPN-vOIZjn2ma5wjAAAA
+15:09:12 [debug] [peer.cpp(255)] sPN-vOIZjn2ma5wjAAAA: Set local description
+15:09:12 [debug] [peer.cpp(165)] sPN-vOIZjn2ma5wjAAAA: On signaling state change: 1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "zOUo2q/6EJ3gW6fV",
+    "offer": {
+        "sdp": "v=0\r\no=- 7876542515262236506 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kbR0\r\na=ice-pwd:E2So0Z12QehTXjLXtl8U3TcK\r\na=ice-options:trickle\r\na=fingerprint:sha-256 3C:19:6F:E9:A3:9F:F0:B5:EA:D6:F1:63:7D:24:78:0A:34:08:61:C4:9D:70:38:DB:90:FE:48:59:1E:35:BE:33\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3388587874 cname:864nasBvI21n4Sot\r\na=ssrc:3388587874 msid:stream_label audio_label\r\na=ssrc:3388587874 mslabel:stream_label\r\na=ssrc:3388587874 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kbR0\r\na=ice-pwd:E2So0Z12QehTXjLXtl8U3TcK\r\na=ice-options:trickle\r\na=fingerprint:sha-256 3C:19:6F:E9:A3:9F:F0:B5:EA:D6:F1:63:7D:24:78:0A:34:08:61:C4:9D:70:38:DB:90:FE:48:59:1E:35:BE:33\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2486917881 1447873420\r\na=ssrc:2486917881 cname:864nasBvI21n4Sot\r\na=ssrc:2486917881 msid:stream_label video_label\r\na=ssrc:2486917881 mslabel:stream_label\r\na=ssrc:2486917881 label:video_label\r\na=ssrc:1447873420 cname:864nasBvI21n4Sot\r\na=ssrc:1447873420 msid:stream_label video_label\r\na=ssrc:1447873420 mslabel:stream_label\r\na=ssrc:1447873420 label:video_label\r\n",
+        "type": "offer"
+    },
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 2976: 421594772956["message",{"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"zOUo2q/6EJ3gW6fV","offer":{"sdp":"v=0\r\no=- 7876542515262236506 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kbR0\r\na=ice-pwd:E2So0Z12QehTXjLXtl8U3TcK\r\na=ice-options:trickle\r\na=fingerprint:sha-256 3C:19:6F:E9:A3:9F:F0:B5:EA:D6:F1:63:7D:24:78:0A:34:08:61:C4:9D:70:38:DB:90:FE:48:59:1E:35:BE:33\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3388587874 cname:864nasBvI21n4Sot\r\na=ssrc:3388587874 msid:stream_label audio_label\r\na=ssrc:3388587874 mslabel:stream_label\r\na=ssrc:3388587874 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kbR0\r\na=ice-pwd:E2So0Z12QehTXjLXtl8U3TcK\r\na=ice-options:trickle\r\na=fingerprint:sha-256 3C:19:6F:E9:A3:9F:F0:B5:EA:D6:F1:63:7D:24:78:0A:34:08:61:C4:9D:70:38:DB:90:FE:48:59:1E:35:BE:33\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2486917881 1447873420\r\na=ssrc:2486917881 cname:864nasBvI21n4Sot\r\na=ssrc:2486917881 msid:stream_label video_label\r\na=ssrc:2486917881 mslabel:stream_label\r\na=ssrc:2486917881 label:video_label\r\na=ssrc:1447873420 cname:864nasBvI21n4Sot\r\na=ssrc:1447873420 msid:stream_label video_label\r\na=ssrc:1447873420 mslabel:stream_label\r\na=ssrc:1447873420 label:video_label\r\n","type":"offer"},"type":"message"}]
+15:09:12 [debug] [peer.cpp(329)] On SDP parse success
+15:09:12 [debug] [peer.cpp(191)] sPN-vOIZjn2ma5wjAAAA: On ICE gathering change: 1
+15:09:12 [trace] [websocket.cpp(222)] On recv: 48
+15:09:12 [trace] [client.cpp(326)] On socket recv: 46
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431594772956[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431594772956
+15:09:12 [trace] [client.cpp(374)] On message: 431594772956
+15:09:12 [trace] [client.cpp(291)] Emit packet:431594772956
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 63973 typ host generation 0 ufrag kbR0 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "pByyvq27dtcyVoKF",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 290: 421990192589["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 63973 typ host generation 0 ufrag kbR0 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"pByyvq27dtcyVoKF","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 48
+15:09:12 [trace] [client.cpp(326)] On socket recv: 46
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431990192589[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431990192589
+15:09:12 [trace] [client.cpp(374)] On message: 431990192589
+15:09:12 [trace] [client.cpp(291)] Emit packet:431990192589
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 63974 typ host generation 0 ufrag kbR0 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "3YPWryra14mwF+YC",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 289: 42586223906["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 63974 typ host generation 0 ufrag kbR0 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"3YPWryra14mwF+YC","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 47
+15:09:12 [trace] [client.cpp(326)] On socket recv: 45
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 43586223906[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 43586223906
+15:09:12 [trace] [client.cpp(374)] On message: 43586223906
+15:09:12 [trace] [client.cpp(291)] Emit packet:43586223906
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 63975 typ host generation 0 ufrag kbR0 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "fPFExwpv/ztUEMM3",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 289: 421061851168["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 63975 typ host generation 0 ufrag kbR0 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"fPFExwpv/ztUEMM3","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 48
+15:09:12 [trace] [client.cpp(326)] On socket recv: 46
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431061851168[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431061851168
+15:09:12 [trace] [client.cpp(374)] On message: 431061851168
+15:09:12 [trace] [client.cpp(291)] Emit packet:431061851168
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 63976 typ host generation 0 ufrag kbR0 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "6S+NtZDdkM1ANWXv",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 289: 42649348182["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 63976 typ host generation 0 ufrag kbR0 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"6S+NtZDdkM1ANWXv","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 47
+15:09:12 [trace] [client.cpp(326)] On socket recv: 45
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 43649348182[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 43649348182
+15:09:12 [trace] [client.cpp(374)] On message: 43649348182
+15:09:12 [trace] [client.cpp(291)] Emit packet:43649348182
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 63977 typ host generation 0 ufrag kbR0 network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "uHf+Xfipm2Q/oY1a",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 289: 42713638374["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 63977 typ host generation 0 ufrag kbR0 network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"uHf+Xfipm2Q/oY1a","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 47
+15:09:12 [trace] [client.cpp(326)] On socket recv: 45
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 43713638374[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 43713638374
+15:09:12 [trace] [client.cpp(374)] On message: 43713638374
+15:09:12 [trace] [client.cpp(291)] Emit packet:43713638374
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 63978 typ host generation 0 ufrag kbR0 network-id 1 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "6FiCTfXsXUV5r12j",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 288: 42921061473["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 63978 typ host generation 0 ufrag kbR0 network-id 1 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"6FiCTfXsXUV5r12j","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 47
+15:09:12 [trace] [client.cpp(326)] On socket recv: 45
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 43921061473[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 43921061473
+15:09:12 [trace] [client.cpp(374)] On message: 43921061473
+15:09:12 [trace] [client.cpp(291)] Emit packet:43921061473
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 52217 typ host tcptype passive generation 0 ufrag kbR0 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "WAI6RyjntreM/Sgr",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 306: 421278690534["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 52217 typ host tcptype passive generation 0 ufrag kbR0 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"WAI6RyjntreM/Sgr","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 48
+15:09:12 [trace] [client.cpp(326)] On socket recv: 46
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431278690534[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431278690534
+15:09:12 [trace] [client.cpp(374)] On message: 431278690534
+15:09:12 [trace] [client.cpp(291)] Emit packet:431278690534
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [transaction.cpp(43)] Destroy
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:3401144682 1 tcp 1518214911 192.168.99.1 52218 typ host tcptype passive generation 0 ufrag kbR0 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "gAqYCT30f9iVzEij",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 304: 4293865780["message",{"candidate":{"candidate":"candidate:3401144682 1 tcp 1518214911 192.168.99.1 52218 typ host tcptype passive generation 0 ufrag kbR0 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"gAqYCT30f9iVzEij","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 46
+15:09:12 [trace] [client.cpp(326)] On socket recv: 44
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 4393865780[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 4393865780
+15:09:12 [trace] [client.cpp(374)] On message: 4393865780
+15:09:12 [trace] [client.cpp(291)] Emit packet:4393865780
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1210811951 1 tcp 1518149375 192.168.1.34 52219 typ host tcptype passive generation 0 ufrag kbR0 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "L2dbTpyJne7TKk0X",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 306: 421702646948["message",{"candidate":{"candidate":"candidate:1210811951 1 tcp 1518149375 192.168.1.34 52219 typ host tcptype passive generation 0 ufrag kbR0 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"L2dbTpyJne7TKk0X","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 48
+15:09:12 [trace] [client.cpp(326)] On socket recv: 46
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 431702646948[{"type":"response","status":200}]
+15:09:12 [trace] [client.cpp(410)] On packet: 431702646948
+15:09:12 [trace] [client.cpp(374)] On message: 431702646948
+15:09:12 [trace] [client.cpp(291)] Emit packet:431702646948
+15:09:12 [trace] [client.cpp(365)] Proxying packet:1
+15:09:12 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 52220 typ host tcptype passive generation 0 ufrag kbR0 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "id": "X53qH5WWL0Ly5t9V",
+    "type": "message"
+}
+15:09:12 [trace] [websocket.cpp(104)] Send: 305: 42192947726["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 52220 typ host tcptype passive generation 0 ufrag kbR0 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|NcGhocxzgbbDGLsxAAAB","id":"X53qH5WWL0Ly5t9V","type":"message"}]
+15:09:12 [trace] [websocket.cpp(222)] On recv: 2459
+15:09:12 [trace] [websocket.cpp(263)] Splitting joined packet at 2412 of 2459
+15:09:12 [trace] [client.cpp(326)] On socket recv: 2408
+15:09:12 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"to":"videoserver|NcGhocxzgbbDGLsxAAAB","type":"message","answer":{"type":"answer","sdp":"v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n"},"id":"0uygzuvaqpec","from":"demo|sPN-vOIZjn2ma5wjAAAA"}]
+15:09:12 [trace] [client.cpp(410)] On packet: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"0uygzuvaqpec","to":"videoserver|NcGhocxzgbbDGLsxAAAB","type":"message"}]
+15:09:12 [trace] [client.cpp(374)] On message: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"0uygzuvaqpec","to":"videoserver|NcGhocxzgbbDGLsxAAAB","type":"message"}]
+15:09:12 [trace] [client.cpp(291)] Emit packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"0uygzuvaqpec","to":"videoserver|NcGhocxzgbbDGLsxAAAB","type":"message"}]
+15:09:12 [trace] [client.cpp(295)] JSON packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|sPN-vOIZjn2ma5wjAAAA","id":"0uygzuvaqpec","to":"videoserver|NcGhocxzgbbDGLsxAAAB","type":"message"}]
+15:09:12 [trace] [client.cpp(299)] Received {
+    "answer": {
+        "sdp": "v=0\r\no=- 7467440950673285296 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v+8v\r\na=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n",
+        "type": "answer"
+    },
+    "from": "demo|sPN-vOIZjn2ma5wjAAAA",
+    "id": "0uygzuvaqpec",
+    "to": "videoserver|NcGhocxzgbbDGLsxAAAB",
+    "type": "message"
+}
+15:09:12 [debug] [signaler.cpp(125)] Peer message: demo|sPN-vOIZjn2ma5wjAAAA
+15:09:12 [debug] [peer.cpp(130)] sPN-vOIZjn2ma5wjAAAA: Receive answer: v=0
+o=- 7467440950673285296 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video
+a=msid-semantic: WMS
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:v+8v
+a=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn
+a=ice-options:trickle
+a=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54
+a=setup:active
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+m=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:v+8v
+a=ice-pwd:fAdz0R9IfbZFtM4TTEzI+DGn
+a=ice-options:trickle
+a=fingerprint:sha-256 C4:BE:D7:62:C1:6E:C1:D3:2D:5F:6B:90:BC:08:05:20:4F:ED:37:25:D3:BC:B0:A0:2D:C4:16:66:FD:F0:50:54
+a=setup:active
+a=mid:video
+a=extmap:2 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:100 red/90000
+a=rtpmap:127 ulpfec/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+
+15:09:12 [debug] [peer.cpp(165)] sPN-vOIZjn2ma5wjAAAA: On signaling state change: 0
+15:09:12 [trace] [packetstream.cpp(52)] Start
+15:09:12 [trace] [packetstream.cpp(629)] On state change: None => Active
+15:09:12 [trace] [packetstream.cpp(545)] Start source: 000002852ECCC870
+15:09:12 [trace] [mediacapture.cpp(125)] Starting
+15:09:12 [trace] [mediacapture.cpp(131)] Initializing thread
+15:09:12 [trace] [mediacapture.cpp(163)] Running
+15:09:12 [trace] [mediacapture.cpp(183)] Looping
+15:09:12 [trace] [mediacapture.cpp(193)] Read frame: pts=0, dts=0
+15:09:12 [trace] [audioresampler.cpp(167)] Resizing resampler buffer: 0
+15:09:12 [trace] [mediacapture.cpp(155)] Emit: 8064
+15:09:12 [trace] [packetstream.cpp(281)] Processing packet: Active: PlanarAudioPacket
+15:09:12 [trace] [packetstream.cpp(336)] Proxying packet: Active: PlanarAudioPacket
+15:09:12 [trace] [packetstream.cpp(360)] Emit: 8064
+15:09:12 [trace] [audiopacketmodule.cpp(92)] Audio frame captured
+21:37:35 [debug] [application.cpp(45)] Create
+21:37:35 [trace] [websocket.cpp(69)] Create
+21:37:35 [trace] [client.cpp(68)] Create
+21:37:35 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+21:37:35 [trace] [client.cpp(80)] Connecting
+21:37:35 [trace] [client.cpp(87)] Socket.IO Connecting
+21:37:35 [trace] [websocket.cpp(301)] On close
+21:37:35 [trace] [client.cpp(314)] On socket close
+21:37:35 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+21:37:35 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:37:35 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:37:35 [trace] [audiodecoder.cpp(44)] Create: 0
+21:37:35 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+21:37:35 [trace] [videocontext.cpp(36)] Create
+21:37:35 [trace] [videodecoder.cpp(42)] Create: 1
+21:37:35 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+21:37:35 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+21:37:35 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+21:37:35 [trace] [audioresampler.cpp(111)] Create: OK
+21:37:35 [debug] [application.cpp(104)] Wait for shutdown
+21:37:36 [debug] [tcpsocket.cpp(397)] Error:TCP connection failed: connection refused
+21:37:36 [trace] [client.cpp(306)] On socket error: TCP connection failed: connection refused
+21:37:36 [error] [client.cpp(210)] Set error: TCP connection failed: connection refused
+21:37:36 [debug] [signaler.cpp(154)] Client state changed from Connecting to Error
+21:37:49 [debug] [application.cpp(45)] Create
+21:37:49 [trace] [websocket.cpp(69)] Create
+21:37:49 [trace] [client.cpp(68)] Create
+21:37:49 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+21:37:50 [trace] [client.cpp(80)] Connecting
+21:37:50 [trace] [client.cpp(87)] Socket.IO Connecting
+21:37:50 [trace] [websocket.cpp(301)] On close
+21:37:50 [trace] [client.cpp(314)] On socket close
+21:37:50 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+21:37:50 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:37:50 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:37:50 [trace] [audiodecoder.cpp(44)] Create: 0
+21:37:50 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+21:37:50 [trace] [videocontext.cpp(36)] Create
+21:37:50 [trace] [videodecoder.cpp(42)] Create: 1
+21:37:50 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+21:37:50 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+21:37:50 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+21:37:50 [trace] [audioresampler.cpp(111)] Create: OK
+21:37:50 [debug] [application.cpp(104)] Wait for shutdown
+21:37:50 [trace] [websocket.cpp(210)] On connect
+21:37:50 [trace] [websocket.cpp(128)] Client request: GET /socket.io/?EIO=4&transport=websocket&t=1567107470 HTTP/1.1
+Connection: Upgrade
+Host: localhost:4500
+Sec-WebSocket-Key: NjVFdDRiaVBMWVZjOG5TVA==
+Sec-WebSocket-Version: 13
+Upgrade: websocket
+
+
+21:37:50 [trace] [websocket.cpp(222)] On recv: 129
+21:37:50 [trace] [websocket.cpp(137)] Client response: HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: dNtqzVefKJnj22KnaYVdaf4PXXY=
+
+
+21:37:50 [trace] [websocket.cpp(153)] Handshake success
+21:37:50 [trace] [client.cpp(232)] On connect
+21:37:50 [debug] [signaler.cpp(154)] Client state changed from Connecting to Connected
+21:37:50 [trace] [websocket.cpp(222)] On recv: 88
+21:37:50 [trace] [client.cpp(326)] On socket recv: 86
+21:37:50 [trace] [packet.cpp(108)] Read raw packet: 0{"sid":"OOR78FdZJe8vQJ5zAAAA","upgrades":[],"pingInterval":25000,"pingTimeout":60000}
+21:37:50 [trace] [client.cpp(410)] On packet: 0-1-1
+21:37:50 [trace] [client.cpp(352)] On handshake: Connected
+21:37:50 [debug] [client.cpp(364)] On handshake: sid=OOR78FdZJe8vQJ5zAAAA, pingInterval=25000, pingTimeout=60000
+21:37:50 [trace] [websocket.cpp(222)] On recv: 4
+21:37:50 [trace] [client.cpp(326)] On socket recv: 2
+21:37:50 [trace] [packet.cpp(108)] Read raw packet: 40
+21:37:50 [trace] [client.cpp(410)] On packet: 40-1
+21:37:50 [trace] [client.cpp(374)] On message: 40-1
+21:37:50 [trace] [client.cpp(198)] Announcing
+21:37:50 [trace] [transaction.cpp(37)] Create
+21:37:50 [trace] [transaction.cpp(49)] Send: 1694807996
+21:37:50 [trace] [websocket.cpp(104)] Send: 90: 421694807996["announce",{"name":"Video Server","token":"","type":"","user":"videoserver"}]
+21:37:50 [trace] [packettransaction.h(148)] On state change:Running
+21:37:50 [trace] [client.cpp(234)] On announce response:Running
+21:37:50 [trace] [websocket.cpp(222)] On recv: 224
+21:37:50 [trace] [client.cpp(326)] On socket recv: 220
+21:37:50 [trace] [packet.cpp(108)] Read raw packet: 431694807996[{"type":"response","status":200,"message":"Welcome Video Server","data":{"name":"Video Server","token":"","type":"","user":"videoserver","host":"::ffff:127.0.0.1","online":true,"id":"OOR78FdZJe8vQJ5zAAAA"}}]
+21:37:50 [trace] [client.cpp(410)] On packet: 431694807996
+21:37:50 [trace] [client.cpp(374)] On message: 431694807996
+21:37:50 [trace] [client.cpp(291)] Emit packet:431694807996
+21:37:50 [trace] [client.cpp(365)] Proxying packet:2
+21:37:50 [trace] [transaction.cpp(60)] On potential response: 1694807996
+21:37:50 [trace] [transaction.cpp(67)] Check response: 1694807996
+21:37:50 [trace] [transaction.cpp(74)] On success
+21:37:50 [trace] [packettransaction.h(175)] Success:431694807996
+21:37:50 [trace] [packettransaction.h(148)] On state change:Success
+21:37:50 [trace] [packettransaction.h(118)] Dispose
+21:37:50 [trace] [memory.cpp(29)] Create
+21:37:50 [trace] [memory.cpp(118)] Create: 00007FF637F72DC0
+21:37:50 [trace] [client.cpp(234)] On announce response:Success
+21:37:50 [trace] [client.cpp(373)] Updating:{
+    "host": "::ffff:127.0.0.1",
+    "id": "OOR78FdZJe8vQJ5zAAAA",
+    "name": "Video Server",
+    "online": true,
+    "token": "",
+    "type": "",
+    "user": "videoserver"
+}
+21:37:50 [debug] [client.cpp(387)] Peer connected:videoserver|OOR78FdZJe8vQJ5zAAAA
+21:37:50 [trace] [client.cpp(265)] On online
+21:37:50 [debug] [signaler.cpp(154)] Client state changed from Connected to Online
+21:37:50 [trace] [client.cpp(175)] Broadcasting presence
+21:37:50 [trace] [client.cpp(160)] Create presence
+21:37:50 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "OOR78FdZJe8vQJ5zAAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "2r7NCNOWHDtZUD7U",
+    "probe": true,
+    "type": "presence"
+}
+21:37:50 [trace] [websocket.cpp(104)] Send: 267: 421496321163["message",{"data":{"host":"::ffff:127.0.0.1","id":"OOR78FdZJe8vQJ5zAAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"2r7NCNOWHDtZUD7U","probe":true,"type":"presence"}]
+21:37:50 [trace] [websocket.cpp(222)] On recv: 48
+21:37:50 [trace] [client.cpp(326)] On socket recv: 46
+21:37:50 [trace] [packet.cpp(108)] Read raw packet: 431496321163[{"type":"response","status":200}]
+21:37:50 [trace] [client.cpp(410)] On packet: 431496321163
+21:37:50 [trace] [client.cpp(374)] On message: 431496321163
+21:37:50 [trace] [client.cpp(291)] Emit packet:431496321163
+21:37:50 [trace] [client.cpp(365)] Proxying packet:1
+21:37:50 [trace] [transaction.cpp(43)] Destroy
+21:37:52 [trace] [websocket.cpp(222)] On recv: 239
+21:37:52 [trace] [client.cpp(326)] On socket recv: 235
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"probe":true,"data":{"user":"demo","name":"Demo User","group":"public","rooms":[],"type":"","host":"::1","online":true,"id":"V1goQmAtk9aR3INIAAAB"},"type":"presence","id":"adttbyo4njj","from":"demo|V1goQmAtk9aR3INIAAAB"}]
+21:37:52 [trace] [client.cpp(410)] On packet: 42-1["message",{"data":{"group":"public","host":"::1","id":"V1goQmAtk9aR3INIAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"adttbyo4njj","probe":true,"type":"presence"}]
+21:37:52 [trace] [client.cpp(374)] On message: 42-1["message",{"data":{"group":"public","host":"::1","id":"V1goQmAtk9aR3INIAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"adttbyo4njj","probe":true,"type":"presence"}]
+21:37:52 [trace] [client.cpp(291)] Emit packet:42-1["message",{"data":{"group":"public","host":"::1","id":"V1goQmAtk9aR3INIAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"adttbyo4njj","probe":true,"type":"presence"}]
+21:37:52 [trace] [client.cpp(295)] JSON packet:42-1["message",{"data":{"group":"public","host":"::1","id":"V1goQmAtk9aR3INIAAAB","name":"Demo User","online":true,"rooms":[],"type":"","user":"demo"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"adttbyo4njj","probe":true,"type":"presence"}]
+21:37:52 [trace] [client.cpp(299)] Received {
+    "data": {
+        "group": "public",
+        "host": "::1",
+        "id": "V1goQmAtk9aR3INIAAAB",
+        "name": "Demo User",
+        "online": true,
+        "rooms": [],
+        "type": "",
+        "user": "demo"
+    },
+    "from": "demo|V1goQmAtk9aR3INIAAAB",
+    "id": "adttbyo4njj",
+    "probe": true,
+    "type": "presence"
+}
+21:37:52 [debug] [signaler.cpp(125)] Peer message: demo|V1goQmAtk9aR3INIAAAB
+21:37:52 [trace] [client.cpp(373)] Updating:{
+    "group": "public",
+    "host": "::1",
+    "id": "V1goQmAtk9aR3INIAAAB",
+    "name": "Demo User",
+    "online": true,
+    "rooms": [],
+    "type": "",
+    "user": "demo"
+}
+21:37:52 [debug] [signaler.cpp(98)] Peer connected: V1goQmAtk9aR3INIAAAB
+21:37:52 [debug] [videopacketsource.cpp(84)] Start
+21:37:52 [debug] [peer.cpp(197)] V1goQmAtk9aR3INIAAAB: On renegotiation needed
+21:37:52 [debug] [client.cpp(387)] Peer connected:demo|V1goQmAtk9aR3INIAAAB
+21:37:52 [trace] [client.cpp(186)] Sending presence
+21:37:52 [trace] [client.cpp(160)] Create presence
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "data": {
+        "host": "::ffff:127.0.0.1",
+        "id": "OOR78FdZJe8vQJ5zAAAA",
+        "name": "Video Server",
+        "online": true,
+        "token": "",
+        "type": "Peer",
+        "user": "videoserver"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "vLIRXBWVfTzit6SS",
+    "probe": false,
+    "to": "demo|V1goQmAtk9aR3INIAAAB",
+    "type": "presence"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 300: 42321642689["message",{"data":{"host":"::ffff:127.0.0.1","id":"OOR78FdZJe8vQJ5zAAAA","name":"Video Server","online":true,"token":"","type":"Peer","user":"videoserver"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"vLIRXBWVfTzit6SS","probe":false,"to":"demo|V1goQmAtk9aR3INIAAAB","type":"presence"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43321642689[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43321642689
+21:37:52 [trace] [client.cpp(374)] On message: 43321642689
+21:37:52 [trace] [client.cpp(291)] Emit packet:43321642689
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [debug] [peer.cpp(255)] V1goQmAtk9aR3INIAAAB: Set local description
+21:37:52 [debug] [peer.cpp(165)] V1goQmAtk9aR3INIAAAB: On signaling state change: 1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "AiDYXUtYi6MWdSEC",
+    "offer": {
+        "sdp": "v=0\r\no=- 6063586748514465276 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:55v5\r\na=ice-pwd:in3taVxlmJ+AALo0HLpvRUPR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:18:9A:6F:C8:E5:BA:8B:A7:6E:7E:03:9A:F4:2F:97:B8:C3:2A:D9:50:43:E0:36:52:D8:C3:80:27:60:52:8A\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3280995259 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:3280995259 msid:stream_label audio_label\r\na=ssrc:3280995259 mslabel:stream_label\r\na=ssrc:3280995259 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:55v5\r\na=ice-pwd:in3taVxlmJ+AALo0HLpvRUPR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:18:9A:6F:C8:E5:BA:8B:A7:6E:7E:03:9A:F4:2F:97:B8:C3:2A:D9:50:43:E0:36:52:D8:C3:80:27:60:52:8A\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2159100258 1121484362\r\na=ssrc:2159100258 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:2159100258 msid:stream_label video_label\r\na=ssrc:2159100258 mslabel:stream_label\r\na=ssrc:2159100258 label:video_label\r\na=ssrc:1121484362 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:1121484362 msid:stream_label video_label\r\na=ssrc:1121484362 mslabel:stream_label\r\na=ssrc:1121484362 label:video_label\r\n",
+        "type": "offer"
+    },
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 2975: 42475038370["message",{"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"AiDYXUtYi6MWdSEC","offer":{"sdp":"v=0\r\no=- 6063586748514465276 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS stream_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:55v5\r\na=ice-pwd:in3taVxlmJ+AALo0HLpvRUPR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:18:9A:6F:C8:E5:BA:8B:A7:6E:7E:03:9A:F4:2F:97:B8:C3:2A:D9:50:43:E0:36:52:D8:C3:80:27:60:52:8A\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3280995259 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:3280995259 msid:stream_label audio_label\r\na=ssrc:3280995259 mslabel:stream_label\r\na=ssrc:3280995259 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:55v5\r\na=ice-pwd:in3taVxlmJ+AALo0HLpvRUPR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 40:18:9A:6F:C8:E5:BA:8B:A7:6E:7E:03:9A:F4:2F:97:B8:C3:2A:D9:50:43:E0:36:52:D8:C3:80:27:60:52:8A\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=sendonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=ssrc-group:FID 2159100258 1121484362\r\na=ssrc:2159100258 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:2159100258 msid:stream_label video_label\r\na=ssrc:2159100258 mslabel:stream_label\r\na=ssrc:2159100258 label:video_label\r\na=ssrc:1121484362 cname:YV5UTZ27vLjCj7WF\r\na=ssrc:1121484362 msid:stream_label video_label\r\na=ssrc:1121484362 mslabel:stream_label\r\na=ssrc:1121484362 label:video_label\r\n","type":"offer"},"type":"message"}]
+21:37:52 [debug] [peer.cpp(329)] On SDP parse success
+21:37:52 [debug] [peer.cpp(191)] V1goQmAtk9aR3INIAAAB: On ICE gathering change: 1
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43475038370[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43475038370
+21:37:52 [trace] [client.cpp(374)] On message: 43475038370
+21:37:52 [trace] [client.cpp(291)] Emit packet:43475038370
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 63663 typ host generation 0 ufrag 55v5 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "t4HC6IaaGa1qKLZx",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 290: 421695352026["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 63663 typ host generation 0 ufrag 55v5 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"t4HC6IaaGa1qKLZx","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431695352026[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431695352026
+21:37:52 [trace] [client.cpp(374)] On message: 431695352026
+21:37:52 [trace] [client.cpp(291)] Emit packet:431695352026
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 63664 typ host generation 0 ufrag 55v5 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "R/76RHuxKmpygtTU",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 289: 42467696292["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 63664 typ host generation 0 ufrag 55v5 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"R/76RHuxKmpygtTU","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43467696292[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43467696292
+21:37:52 [trace] [client.cpp(374)] On message: 43467696292
+21:37:52 [trace] [client.cpp(291)] Emit packet:43467696292
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 63665 typ host generation 0 ufrag 55v5 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "OWJh6/a8PAOw70wT",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 288: 42504572478["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 63665 typ host generation 0 ufrag 55v5 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"OWJh6/a8PAOw70wT","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43504572478[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43504572478
+21:37:52 [trace] [client.cpp(374)] On message: 43504572478
+21:37:52 [trace] [client.cpp(291)] Emit packet:43504572478
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2999745851 1 udp 2122260223 192.168.56.1 63666 typ host generation 0 ufrag 55v5 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "elum21bpKPzFLAx1",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 290: 421187162866["message",{"candidate":{"candidate":"candidate:2999745851 1 udp 2122260223 192.168.56.1 63666 typ host generation 0 ufrag 55v5 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"elum21bpKPzFLAx1","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431187162866[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431187162866
+21:37:52 [trace] [client.cpp(374)] On message: 431187162866
+21:37:52 [trace] [client.cpp(291)] Emit packet:431187162866
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:2218435994 1 udp 2122194687 192.168.99.1 63667 typ host generation 0 ufrag 55v5 network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "LgbpHGn57LCOG1d2",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 289: 42212346376["message",{"candidate":{"candidate":"candidate:2218435994 1 udp 2122194687 192.168.99.1 63667 typ host generation 0 ufrag 55v5 network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"LgbpHGn57LCOG1d2","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43212346376[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43212346376
+21:37:52 [trace] [client.cpp(374)] On message: 43212346376
+21:37:52 [trace] [client.cpp(291)] Emit packet:43212346376
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:111704799 1 udp 2122129151 192.168.1.34 63668 typ host generation 0 ufrag 55v5 network-id 1 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "XJ4SJBm2t4JzlTQ4",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 288: 42386012966["message",{"candidate":{"candidate":"candidate:111704799 1 udp 2122129151 192.168.1.34 63668 typ host generation 0 ufrag 55v5 network-id 1 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"XJ4SJBm2t4JzlTQ4","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43386012966[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43386012966
+21:37:52 [trace] [client.cpp(374)] On message: 43386012966
+21:37:52 [trace] [client.cpp(291)] Emit packet:43386012966
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 49942 typ host tcptype passive generation 0 ufrag 55v5 network-id 5 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "nDiWG/j8w+oyGEGX",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 306: 421029407088["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 49942 typ host tcptype passive generation 0 ufrag 55v5 network-id 5 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"nDiWG/j8w+oyGEGX","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431029407088[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431029407088
+21:37:52 [trace] [client.cpp(374)] On message: 431029407088
+21:37:52 [trace] [client.cpp(291)] Emit packet:431029407088
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:3401144682 1 tcp 1518214911 192.168.99.1 49943 typ host tcptype passive generation 0 ufrag 55v5 network-id 4 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "rfMP3ZefTK/m4mju",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 306: 421409196728["message",{"candidate":{"candidate":"candidate:3401144682 1 tcp 1518214911 192.168.99.1 49943 typ host tcptype passive generation 0 ufrag 55v5 network-id 4 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"rfMP3ZefTK/m4mju","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431409196728[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431409196728
+21:37:52 [trace] [client.cpp(374)] On message: 431409196728
+21:37:52 [trace] [client.cpp(291)] Emit packet:431409196728
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1210811951 1 tcp 1518149375 192.168.1.34 49944 typ host tcptype passive generation 0 ufrag 55v5 network-id 1 network-cost 50",
+        "sdpMLineIndex": 0,
+        "sdpMid": "audio"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "yvcJToMjdLCBfUlI",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 305: 42595476928["message",{"candidate":{"candidate":"candidate:1210811951 1 tcp 1518149375 192.168.1.34 49944 typ host tcptype passive generation 0 ufrag 55v5 network-id 1 network-cost 50","sdpMLineIndex":0,"sdpMid":"audio"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"yvcJToMjdLCBfUlI","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 47
+21:37:52 [trace] [client.cpp(326)] On socket recv: 45
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 43595476928[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 43595476928
+21:37:52 [trace] [client.cpp(374)] On message: 43595476928
+21:37:52 [trace] [client.cpp(291)] Emit packet:43595476928
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:4233069003 1 tcp 1518280447 192.168.56.1 49945 typ host tcptype passive generation 0 ufrag 55v5 network-id 5 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "4yOKnQOAwL7J5CKj",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 306: 421636322722["message",{"candidate":{"candidate":"candidate:4233069003 1 tcp 1518280447 192.168.56.1 49945 typ host tcptype passive generation 0 ufrag 55v5 network-id 5 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"4yOKnQOAwL7J5CKj","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431636322722[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431636322722
+21:37:52 [trace] [client.cpp(374)] On message: 431636322722
+21:37:52 [trace] [client.cpp(291)] Emit packet:431636322722
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:3401144682 1 tcp 1518214911 192.168.99.1 49946 typ host tcptype passive generation 0 ufrag 55v5 network-id 4 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "3avvDWib8WdzpZc1",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 304: 4218334496["message",{"candidate":{"candidate":"candidate:3401144682 1 tcp 1518214911 192.168.99.1 49946 typ host tcptype passive generation 0 ufrag 55v5 network-id 4 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"3avvDWib8WdzpZc1","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 46
+21:37:52 [trace] [client.cpp(326)] On socket recv: 44
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 4318334496[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 4318334496
+21:37:52 [trace] [client.cpp(374)] On message: 4318334496
+21:37:52 [trace] [client.cpp(291)] Emit packet:4318334496
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [client.cpp(122)] Sending message:{
+    "candidate": {
+        "candidate": "candidate:1210811951 1 tcp 1518149375 192.168.1.34 49947 typ host tcptype passive generation 0 ufrag 55v5 network-id 1 network-cost 50",
+        "sdpMLineIndex": 1,
+        "sdpMid": "video"
+    },
+    "from": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "id": "16FQhRkXmx2NUC5h",
+    "type": "message"
+}
+21:37:52 [trace] [websocket.cpp(104)] Send: 306: 421435293911["message",{"candidate":{"candidate":"candidate:1210811951 1 tcp 1518149375 192.168.1.34 49947 typ host tcptype passive generation 0 ufrag 55v5 network-id 1 network-cost 50","sdpMLineIndex":1,"sdpMid":"video"},"from":"videoserver|OOR78FdZJe8vQJ5zAAAA","id":"16FQhRkXmx2NUC5h","type":"message"}]
+21:37:52 [trace] [websocket.cpp(222)] On recv: 48
+21:37:52 [trace] [client.cpp(326)] On socket recv: 46
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 431435293911[{"type":"response","status":200}]
+21:37:52 [trace] [client.cpp(410)] On packet: 431435293911
+21:37:52 [trace] [client.cpp(374)] On message: 431435293911
+21:37:52 [trace] [client.cpp(291)] Emit packet:431435293911
+21:37:52 [trace] [client.cpp(365)] Proxying packet:1
+21:37:52 [trace] [websocket.cpp(222)] On recv: 2411
+21:37:52 [trace] [client.cpp(326)] On socket recv: 2407
+21:37:52 [trace] [packet.cpp(108)] Read raw packet: 42["message",{"to":"videoserver|OOR78FdZJe8vQJ5zAAAA","type":"message","answer":{"type":"answer","sdp":"v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n"},"id":"g4zwfedq1yi","from":"demo|V1goQmAtk9aR3INIAAAB"}]
+21:37:52 [trace] [client.cpp(410)] On packet: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"g4zwfedq1yi","to":"videoserver|OOR78FdZJe8vQJ5zAAAA","type":"message"}]
+21:37:52 [trace] [client.cpp(374)] On message: 42-1["message",{"answer":{"sdp":"v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"g4zwfedq1yi","to":"videoserver|OOR78FdZJe8vQJ5zAAAA","type":"message"}]
+21:37:52 [trace] [client.cpp(291)] Emit packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"g4zwfedq1yi","to":"videoserver|OOR78FdZJe8vQJ5zAAAA","type":"message"}]
+21:37:52 [trace] [client.cpp(295)] JSON packet:42-1["message",{"answer":{"sdp":"v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n","type":"answer"},"from":"demo|V1goQmAtk9aR3INIAAAB","id":"g4zwfedq1yi","to":"videoserver|OOR78FdZJe8vQJ5zAAAA","type":"message"}]
+21:37:52 [trace] [client.cpp(299)] Received {
+    "answer": {
+        "sdp": "v=0\r\no=- 4158572923000341946 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:cNeo\r\na=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS\r\na=ice-options:trickle\r\na=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 urn:3gpp:video-orientation\r\na=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:100 red/90000\r\na=rtpmap:127 ulpfec/90000\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\n",
+        "type": "answer"
+    },
+    "from": "demo|V1goQmAtk9aR3INIAAAB",
+    "id": "g4zwfedq1yi",
+    "to": "videoserver|OOR78FdZJe8vQJ5zAAAA",
+    "type": "message"
+}
+21:37:52 [debug] [signaler.cpp(125)] Peer message: demo|V1goQmAtk9aR3INIAAAB
+21:37:52 [debug] [peer.cpp(130)] V1goQmAtk9aR3INIAAAB: Receive answer: v=0
+o=- 4158572923000341946 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio video
+a=msid-semantic: WMS
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:cNeo
+a=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS
+a=ice-options:trickle
+a=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E
+a=setup:active
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+m=video 9 UDP/TLS/RTP/SAVPF 96 98 100 127 97 99 101
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:cNeo
+a=ice-pwd:0sh5bHdxkNkM8yJ7riOiUNAS
+a=ice-options:trickle
+a=fingerprint:sha-256 CD:6C:A2:61:53:1D:6D:E2:39:3D:87:6E:25:62:EA:C7:8E:85:AD:E4:61:DA:D3:DB:56:75:52:43:8C:03:BD:5E
+a=setup:active
+a=mid:video
+a=extmap:2 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:4 urn:3gpp:video-orientation
+a=extmap:5 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:100 red/90000
+a=rtpmap:127 ulpfec/90000
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+
+21:37:52 [debug] [peer.cpp(165)] V1goQmAtk9aR3INIAAAB: On signaling state change: 0
+21:37:52 [trace] [packetstream.cpp(52)] Start
+21:37:52 [trace] [packetstream.cpp(629)] On state change: None => Active
+21:37:52 [trace] [packetstream.cpp(545)] Start source: 0000028525B8B670
+21:37:52 [trace] [mediacapture.cpp(125)] Starting
+21:37:52 [trace] [mediacapture.cpp(131)] Initializing thread
+21:37:52 [trace] [mediacapture.cpp(163)] Running
+21:37:52 [trace] [mediacapture.cpp(183)] Looping
+21:37:52 [trace] [mediacapture.cpp(193)] Read frame: pts=0, dts=0
+21:37:52 [trace] [audioresampler.cpp(167)] Resizing resampler buffer: 0
+21:37:52 [trace] [mediacapture.cpp(155)] Emit: 8064
+21:37:52 [trace] [packetstream.cpp(281)] Processing packet: Active: PlanarAudioPacket
+21:37:52 [trace] [packetstream.cpp(336)] Proxying packet: Active: PlanarAudioPacket
+21:37:52 [trace] [packetstream.cpp(360)] Emit: 8064
+21:37:52 [trace] [audiopacketmodule.cpp(92)] Audio frame captured
+21:38:28 [debug] [application.cpp(45)] Create
+21:38:28 [trace] [websocket.cpp(69)] Create
+21:38:28 [trace] [client.cpp(68)] Create
+21:38:28 [trace] [audiopacketmodule.cpp(86)] AudioPacketModule RETURN NULL!!!
+21:38:29 [trace] [client.cpp(80)] Connecting
+21:38:29 [trace] [client.cpp(87)] Socket.IO Connecting
+21:38:29 [trace] [websocket.cpp(301)] On close
+21:38:29 [trace] [client.cpp(314)] On socket close
+21:38:29 [debug] [signaler.cpp(154)] Client state changed from Closed to Connecting
+21:38:29 [trace] [mediacapture.cpp(80)] Opening file: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:38:29 [trace] [mediacapture.cpp(87)] Opening stream: D:/workspaces/workWebRTC/WebRTCNative/libsourcey/src\av\samples\data\test.mp4
+21:38:29 [trace] [audiodecoder.cpp(44)] Create: 0
+21:38:29 [debug] [audiocontext.cpp(52)] Open: 
+	Input: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+	Output: AudioCodec[Unknown:aac:22050:65075:2:fltp:1]
+21:38:29 [trace] [videocontext.cpp(36)] Create
+21:38:29 [trace] [videodecoder.cpp(42)] Create: 1
+21:38:29 [debug] [videocontext.cpp(57)] Open: 
+	Input: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+	Output: VideoCodec[Unknown:h264:640:360:24:yuv420p:1]
+21:38:29 [debug] [audiocontext.cpp(151)] Recreating audio resampler context
+21:38:29 [trace] [audioresampler.cpp(63)] Create audio resampler:
+
+	In Nb Channels: 2
+	In Channel Layout: stereo
+	In Sample Rate: 22050
+	In Sample Fmt: fltp
+	Out Nb Channels: 2
+	Out Channel Layout: stereo
+	Out Sample Rate: 44000
+	Out Lample Fmt: s16
+21:38:29 [trace] [audioresampler.cpp(111)] Create: OK
+21:38:29 [debug] [application.cpp(104)] Wait for shutdown
+21:38:30 [debug] [tcpsocket.cpp(397)] Error:TCP connection failed: connection refused
+21:38:30 [trace] [client.cpp(306)] On socket error: TCP connection failed: connection refused
+21:38:30 [error] [client.cpp(210)] Set error: TCP connection failed: connection refused
+21:38:30 [debug] [signaler.cpp(154)] Client state changed from Connecting to Error
