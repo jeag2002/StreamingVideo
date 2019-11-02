@@ -20,3 +20,9 @@ NativeWebRTCToBrowser-prev ==> Streaming video from App Server to Browser (doesn
                                Node 8.11.3
                                libsourcey
                                webrtc 19251-5c3c104-win-x64
+
+WebRTC.Net		  ==>  Streaming video from App Server implemented in C# to Browser 
+			       VC++ 2017
+			       Microsoft Net 4.0 
+                               webrtc 
+
