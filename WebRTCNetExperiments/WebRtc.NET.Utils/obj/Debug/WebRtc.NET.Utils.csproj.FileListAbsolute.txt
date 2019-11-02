@@ -1,0 +1,6 @@
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\bin\Debug\WebRtc.NET.Utils.dll
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\bin\Debug\WebRtc.NET.Utils.pdb
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\obj\Debug\WebRtc.NET.Utils.csproj.CoreCompileInputs.cache
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\obj\Debug\WebRtc.NET.Utils.dll
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\obj\Debug\WebRtc.NET.Utils.pdb
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET.Utils\obj\Debug\WebRtc.NET.Utils.csprojAssemblyReference.cache

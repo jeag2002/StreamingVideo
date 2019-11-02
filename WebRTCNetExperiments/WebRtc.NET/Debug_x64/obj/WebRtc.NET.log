@@ -1,0 +1,34 @@
+﻿  stdafx.cpp
+  conductor.cc
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\include\webrtc\base\window.h(87,1): warning C4312:  'reinterpret_cast': conversion from 'int' to 'rtc::DesktopId::DesktopT' of greater size
+  defaults.cc
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\conductor.cc(479,44): warning C4267:  'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  vp8_impl.cc
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\include\webrtc\base\window.h(87,1): warning C4312:  'reinterpret_cast': conversion from 'int' to 'rtc::DesktopId::DesktopT' of greater size
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(224,65): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(224,65): warning C4267:  'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(294,43): warning C4267:  'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(570,40): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(694,1): warning C4267:  'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(758,22): warning C4244:  'initializing': conversion from 'float' to 'uint32_t', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(879,62): warning C4244:  'argument': conversion from 'const uint64_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(900,15): warning C4244:  'initializing': conversion from 'const uint64_t' to 'int', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(1106,48): warning C4267:  'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  yuvframegenerator.cc
+  main.cc
+  Generating Code...
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\internals\vp8_impl.cc(1324,1): warning C4267:  'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  managed.cpp
+  TJpeg.cpp
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\include\webrtc\base\window.h(87,1): warning C4312:  'reinterpret_cast': conversion from 'int' to 'rtc::DesktopId::DesktopT' of greater size
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\include\leptonica\pix.h(241,45): warning C4305:  'initializing': truncation from 'double' to 'l_float32'
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\include\leptonica\pix.h(243,45): warning C4305:  'initializing': truncation from 'double' to 'l_float32'
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\TJpeg.cpp(23,23): warning C4244:  '=': conversion from 'l_int32' to 'l_float32', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\TJpeg.cpp(749,33): warning C4244:  'return': conversion from 'double' to 'float', possible loss of data
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\TJpeg.cpp(786,30): warning C4244:  'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\src\TJpeg.cpp(954,1): warning C4305:  'argument': truncation from 'double' to 'l_float32'
+  managed.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  managed.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+LINK : warning LNK4010: invalid subsystem version number 5.01; default subsystem version assumed
+  WebRtc.NET.vcxproj -> D:\workspaces\workWebRTC\WebRTCNative_3\WebRtc.NET\WebRtc.NET\Debug_x64\WebRtc.NET.dll
